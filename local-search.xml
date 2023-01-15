@@ -4,6 +4,176 @@
   
   
   <entry>
+    <title>belajar javascript part3</title>
+    <link href="/2023/01/15/belajar-javascript-part3/"/>
+    <url>/2023/01/15/belajar-javascript-part3/</url>
+    
+    <content type="html"><![CDATA[<p>Pada bagian ketiga ini, kita akan belajar cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi web yang interaktif dan dinamis.</p><ol><li>Integrasi dengan HTML<br>JavaScript dapat digabungkan dengan HTML dengan menempatkan kode JavaScript di dalam tag script pada halaman HTML. Anda dapat menempatkan kode JavaScript di dalam tag script yang terletak di dalam head atau di dalam body halaman.<br><br>Contoh:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span><br><span class="language-javascript">      <span class="hljs-keyword">function</span> <span class="hljs-title function_">tampilkanPesan</span>(<span class="hljs-params"></span>) &#123;</span><br><span class="language-javascript">        <span class="hljs-title function_">alert</span>(<span class="hljs-string">&quot;Selamat Datang&quot;</span>);</span><br><span class="language-javascript">      &#125;</span><br><span class="language-javascript">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;tampilkanPesan()&quot;</span>&gt;</span>Tampilkan Pesan<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure></li><li>Integrasi dengan CSS<br>JavaScript dapat digabungkan dengan CSS dengan mengubah gaya elemen HTML menggunakan JavaScript. Anda dapat mengubah gaya elemen menggunakan properti seperti <span class="label label-info">style</span> atau <span class="label label-info">className</span> dan mengatur gaya menggunakan CSS.<br><br>Contoh: <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">      <span class="hljs-selector-class">.merah</span> &#123;</span><br><span class="language-css">        <span class="hljs-attribute">color</span>: red;</span><br><span class="language-css">      &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;teks&quot;</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;document.getElementById(&#x27;teks&#x27;).className = &#x27;merah&#x27;&quot;</span>&gt;</span>Ubah Warna<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure></li><li>Integrasi dengan File Eksternal<br>JavaScript dapat digabungkan dengan file eksternal dengan menyertakan file JavaScript dari luar menggunakan tag script dan menentukan source file. Anda dapat menyertakan file JavaScript dari folder lokal atau dari server lain.<br><br>Contoh:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;myscripts.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;tampilkanPesan()&quot;</span>&gt;</span>Tampilkan Pesan<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>lalu buat file <span class="label label-info">myscripts.js</span><br>dan isi dengan script ini<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">tampilkanPesan</span>(<span class="hljs-params"></span>) &#123;<br>        <span class="hljs-title function_">alert</span>(<span class="hljs-string">&quot;Selamat Datang&quot;</span>);<br>      &#125;<br></code></pre></td></tr></table></figure>Itulah cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi web yang interaktif dan dinamis. Dengan menggabungkan ketiganya, kita dapat membuat aplikasi web yang memiliki tampilan yang menarik dan memiliki interaksi yang meningkatkan user experience. Anda dapat mengeksplorasi lebih lanjut mengenai cara menggabungkan ketiganya dengan mencoba membuat proyek web sendiri dan mencoba berbagai fitur yang ditawarkan oleh JavaScript, HTML, dan CSS. Selamat belajar!</li></ol><h2 id="terkait"><a href="#terkait" class="headerlink" title="terkait"></a>terkait</h2><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://blogworlds.github.io/2023/01/15/belajar-javascript-part1/">https://blogworlds.github.io/2023/01/15/belajar-javascript-part1/</a><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://blogworlds.github.io/2023/01/15/belajar-javascript-part2/">https://blogworlds.github.io/2023/01/15/belajar-javascript-part2/</a><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    <categories>
+      
+      <category>front end</category>
+      
+      <category>web dev</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>html</tag>
+      
+      <tag>javascript</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>belajar javascript part2</title>
+    <link href="/2023/01/15/belajar-javascript-part2/"/>
+    <url>/2023/01/15/belajar-javascript-part2/</url>
+    
+    <content type="html"><![CDATA[<p>Pada bagian kedua ini, kita akan belajar tentang cara menambahkan interaksi dan dinamisme pada halaman web menggunakan JavaScript.</p><ol><li>DOM (Document Object Model)<br>JavaScript menyediakan akses ke DOM (Document Object Model) yang memungkinkan Anda untuk mengubah elemen HTML dan mengatur interaksi dengan pengguna. Anda dapat mengambil elemen HTML menggunakan metode seperti <span class="label label-info">getElementById</span> atau <span class="label label-info">querySelector</span> dan mengubah gaya atau konten elemen tersebut menggunakan properti seperti <span class="label label-info">innerHTML</span> atau <span class="label label-info">style</span>. <br><br>Contoh:<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> judul = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;judul&quot;</span>);<br>judul.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">&quot;Selamat Datang&quot;</span>;<br>judul.<span class="hljs-property">style</span>.<span class="hljs-property">color</span> = <span class="hljs-string">&quot;blue&quot;</span>;<br></code></pre></td></tr></table></figure></li><li>Event<br>JavaScript menyediakan event seperti <span class="label label-info">click</span> <span class="label label-info">mouseover</span> dan <span class="label label-info">submit</span> yang dapat digunakan untuk mengatur interaksi dengan pengguna. Anda dapat menambahkan event listener pada elemen HTML menggunakan metode seperti <span class="label label-info">addEventListener</span>  dan mengeksekusi kode sesuai dengan event yang terjadi.<br><br>contoh: <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> tombol = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;tombol&quot;</span>);<br>tombol.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-title function_">alert</span>(<span class="hljs-string">&quot;Tombol diklik&quot;</span>);<br>&#125;);<br></code></pre></td></tr></table></figure></li><li>Function<br>JavaScript menyediakan function yang dapat digunakan untuk mengelompokkan kode yang sering digunakan dan membuat kode lebih terstruktur. Anda dapat mendefinisikan function menggunakan kata kunci <span class="label label-info">function</span> dan memanggilnya menggunakan nama function.<br>Contoh:<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">tampilkanPesan</span>(<span class="hljs-params">pesan</span>) &#123;<br>  <span class="hljs-title function_">alert</span>(pesan);<br>&#125;<br><br><span class="hljs-title function_">tampilkanPesan</span>(<span class="hljs-string">&quot;Selamat Datang&quot;</span>);<br></code></pre></td></tr></table></figure>Itulah cara menambahkan interaksi dan dinamisme pada halaman web menggunakan JavaScript. Selanjutnya kita akan belajar tentang cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi web yang interaktif dan dinamis. Selamat belajar!</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>front end</category>
+      
+      <category>web dev</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>javascript</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>belajar javascript part1</title>
+    <link href="/2023/01/15/belajar-javascript-part1/"/>
+    <url>/2023/01/15/belajar-javascript-part1/</url>
+    
+    <content type="html"><![CDATA[<p><b>JavaScript</b> adalah bahasa pemrograman yang digunakan untuk menambahkan interaksi dan dinamisme pada halaman web. Dalam artikel ini, kita akan belajar dasar-dasar dari JavaScript dan bagaimana cara menggunakannya dalam pembuatan halaman web.</p><ol><li><p>Variabel dan Tipe Data<br>JavaScript menyediakan variabel yang dapat digunakan untuk menyimpan data. Variabel dideklarasikan menggunakan kata kunci <span class="label label-info">var</span> atau <span class="label label-info">let</span> dan diberi nama yang unik. JavaScript juga menyediakan tipe data seperti number, string, dan boolean yang dapat digunakan dalam variabel.<br><br>contoh:</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> nama = <span class="hljs-string">&quot;rein dye&quot;</span>;<br><span class="hljs-keyword">let</span> umur = <span class="hljs-number">17</span>;<br><span class="hljs-keyword">let</span> sudahMenikah = <span class="hljs-literal">false</span>;<br></code></pre></td></tr></table></figure></li><li><p>Operator<br>JavaScript menyediakan operator seperti <b>operator aritmatika</b> (+, -, *, &#x2F;) dan <b>operator perbandingan</b> (&gt;, &lt;, &gt;&#x3D;, &lt;&#x3D;) yang dapat digunakan untuk mengevaluasi ekspresi dan menentukan nilai.<br><br>contoh: </p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> hasil = <span class="hljs-number">10</span> + <span class="hljs-number">20</span>;<br><span class="hljs-keyword">let</span> benarSalah = (hasil &gt; <span class="hljs-number">15</span>);<br></code></pre></td></tr></table></figure></li><li><p>Conditional dan Looping<br>JavaScript menyediakan pernyataan kondisional seperti <span class="label label-info">if</span> dan <span class="label label-info">switch</span> yang dapat digunakan untuk mengeksekusi kode berdasarkan kondisi tertentu. JavaScript juga menyediakan perulangan seperti <span class="label label-info">for</span> dan <span class="label label-info">while</span> yang dapat digunakan untuk mengeksekusi kode beberapa kali.</p><br>contoh: <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">var</span> umur = <span class="hljs-number">17</span>;<br><span class="hljs-keyword">if</span> (umur &gt;= <span class="hljs-number">18</span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;Anda cukup umur untuk melakukan pemilihan&quot;</span>);<br>&#125; <span class="hljs-keyword">else</span> &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;Anda belum cukup umur untuk melakukan pemilihan&quot;</span>);<br>&#125;<br><br></code></pre></td></tr></table></figure>Itulah dasar-dasar dari JavaScript dan bagaimana cara menggunakannya dalam pembuatan halaman web.<br> Selanjutnya kita akan belajar tentang cara menambahkan interaksi dan dinamisme pada halaman web menggunakan JavaScript dan cara menggabungkannya dengan HTML dan CSS. Selamat belajar!</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>front end</category>
+      
+      <category>web dev</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>javascript</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>belajar css part3</title>
+    <link href="/2023/01/15/belajar-css-part3/"/>
+    <url>/2023/01/15/belajar-css-part3/</url>
+    
+    <content type="html"><![CDATA[<p>Pada bagian ketiga ini, kita akan belajar tentang cara menambahkan interaksi dan animasi pada halaman web menggunakan CSS.</p><ol><li><b>Pseudo-class</b> dan <b>Pseudo-element</b><br>CSS menyediakan pseudo-class dan pseudo-element yang dapat digunakan untuk menambahkan interaksi pada elemen HTML. Pseudo-class digunakan untuk menentukan kondisi elemen seperti saat di-hover atau saat diklik, sedangkan pseudo-element digunakan untuk menentukan bagian tertentu dari elemen seperti <span class="label label-primary">::before</span> atau <span class="label label-primary">::after</span>.<br>contoh:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br><br><span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">::first-letter</span> &#123;<br>  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;<br>&#125;<br></code></pre></td></tr></table></figure></li><li>Transitions<br>CSS menyediakan transitions yang dapat digunakan untuk menambahkan animasi pada perubahan gaya elemen HTML. Transitions menentukan bagaimana gaya akan berubah secara bertahap dari satu ke yang lain.<br><br>contoh:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">button</span> &#123;<br>  <span class="hljs-attribute">transition</span>: background-color <span class="hljs-number">1s</span>;<br>&#125;<br><br><span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:hover</span> &#123;<br>  <span class="hljs-attribute">background-color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure></li><li>Animations<br>CSS juga menyediakan animations yang dapat digunakan untuk menambahkan animasi lebih kompleks pada halaman web. Animations menentukan bagaimana elemen akan bergerak atau berubah selama periode waktu tertentu.<br><br>contoh:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-keyword">@keyframes</span> example &#123;<br>  <span class="hljs-selector-tag">from</span> &#123;<span class="hljs-attribute">background-color</span>: red;&#125;<br>  <span class="hljs-selector-tag">to</span> &#123;<span class="hljs-attribute">background-color</span>: yellow;&#125;<br>&#125;<br><br><span class="hljs-selector-tag">div</span> &#123;<br>  <span class="hljs-attribute">animation</span>: example <span class="hljs-number">5s</span> infinite;<br>&#125;<br></code></pre></td></tr></table></figure>Itulah beberapa cara untuk menambahkan interaksi dan animasi pada halaman web menggunakan CSS. Dengan menguasai teknik-teknik tersebut, Anda dapat membuat halaman web yang lebih interaktif dan menarik.<br><div class="note note-danger">            <p>Namun ingatlah bahwa penambahan interaksi dan animasi yang berlebihan dapat mengurangi kinerja halaman web dan mengganggu pengalaman pengguna.</p>          </div><br>Selamat belajar dan semoga sukses dalam pembuatan halaman web Anda!</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>front end</category>
+      
+      <category>web dev</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>html</tag>
+      
+      <tag>css</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>belajar css part2</title>
+    <link href="/2023/01/15/belajar-css-part2/"/>
+    <url>/2023/01/15/belajar-css-part2/</url>
+    
+    <content type="html"><![CDATA[<p>Pada bagian kedua ini, kita akan belajar tentang cara menambahkan gaya yang lebih kompleks pada halaman web menggunakan CSS.<br><br></p><ol><li>Box Model<br>CSS menggunakan box model untuk menentukan ukuran dan jarak antar elemen. Setiap elemen HTML memiliki margin, border, padding, dan width&#x2F;height yang dapat ditentukan dengan CSS.<br><br>contoh:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">p</span> &#123;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>; <span class="hljs-comment">/* jarak dari atas dan bawah */</span><br>  <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>; <span class="hljs-comment">/* jarak dari dalam */</span><br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid black; <span class="hljs-comment">/* garis tepi */</span><br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>; <span class="hljs-comment">/* lebar */</span><br>&#125;<br></code></pre></td></tr></table></figure></li><li>Position<br>CSS menyediakan empat pilihan posisi untuk elemen: <span class="label label-primary">static</span> <span class="label label-primary">relative</span> <span class="label label-primary">absolute</span> dan <span class="label label-primary">fixed</span>. Posisi static adalah posisi default yang tidak dapat diubah, sedangkan relative, absolute, dan fixed dapat digunakan untuk mengatur posisi elemen secara lebih spesifik.<br><br>contoh: <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">p</span> &#123;<br>  <span class="hljs-attribute">position</span>: relative; <span class="hljs-comment">/* posisi relatif terhadap posisi default */</span><br>  <span class="hljs-attribute">left</span>: <span class="hljs-number">10px</span>; <span class="hljs-comment">/* jarak dari kiri */</span><br>  <span class="hljs-attribute">top</span>: <span class="hljs-number">5px</span>; <span class="hljs-comment">/* jarak dari atas */</span><br>&#125;<br></code></pre></td></tr></table></figure></li><li>Display<br>CSS menyediakan pilihan display seperti block, inline, dan none yang dapat digunakan untuk mengatur bagaimana elemen akan ditampilkan. Elemen dengan display block akan mengambil seluruh lebar tersedia, sedangkan elemen dengan display inline hanya akan mengambil sebagian dari lebar tersedia.<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">img</span> &#123;<br>  <span class="hljs-attribute">display</span>: block; <span class="hljs-comment">/* mengambil seluruh lebar tersedia */</span><br>&#125;<br><br><span class="hljs-selector-tag">span</span> &#123;<br>  <span class="hljs-attribute">display</span>: inline; <span class="hljs-comment">/* hanya mengambil sebagian dari lebar tersedia */</span><br>&#125;<br></code></pre></td></tr></table></figure></li><li>Class dan ID<br>CSS menyediakan selector class dan id yang dapat digunakan untuk menentukan elemen HTML yang akan diberi gaya. Class digunakan untuk menentukan beberapa elemen yang memiliki gaya yang sama, sedangkan id digunakan untuk menentukan satu elemen yang memiliki gaya yang unik.<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight&quot;</span>&gt;</span>Ini adalah paragraf dengan gaya yang ditambahkan melalui class.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;unique&quot;</span>&gt;</span>Ini adalah paragraf dengan gaya yang ditambahkan melalui id.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><br></code></pre></td></tr></table></figure>dan css <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-class">.highlight</span> &#123;<br>  <span class="hljs-attribute">background-color</span>: yellow;<br>&#125;<br><br><span class="hljs-selector-id">#unique</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br><br></code></pre></td></tr></table></figure>Dalam contoh di atas, semua paragraf yang memiliki class <span class="label label-primary">"highlight"</span> akan berlatar belakang kuning karena gaya yang diterapkan pada class <span class="label label-info">.highlight</span>, sementara paragraf yang memiliki id <span class="label label-primary">"unique"</span> akan berwarna merah karena gaya yang diterapkan pada id <span class="label label-info">#unique</span>.<br><br><br><br>Itulah beberapa cara untuk menambahkan gaya yang lebih kompleks pada halaman web menggunakan CSS. Selain teknik-teknik tersebut, masih banyak teknik lain yang dapat digunakan untuk membuat halaman web yang lebih interaktif dan menarik. Namun dengan menguasai dasar-dasar dari CSS dan teknik-teknik yang dibahas di sini, Anda sudah dapat membuat halaman web yang profesional dan menarik. Selamat belajar dan semoga sukses dalam pembuatan halaman web Anda!</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>front end</category>
+      
+      <category>web dev</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>html</tag>
+      
+      <tag>css</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>belajar css part1</title>
+    <link href="/2023/01/15/belajar-css-part1/"/>
+    <url>/2023/01/15/belajar-css-part1/</url>
+    
+    <content type="html"><![CDATA[<p>Pada bagian pertama ini, kita akan belajar dasar-dasar dari <b>CSS (Cascading Style Sheets)</b>. CSS adalah bahasa yang digunakan untuk menambahkan gaya pada halaman web yang sudah dibuat dengan HTML.<br><br></p><ol><li>Penambahan CSS<br>CSS dapat ditambahkan ke halaman web dengan menggunakan tiga cara:<ul><li>Menambahkan CSS langsung ke elemen HTML dengan menggunakan atribut <span class="label label-info">"style"</span></li><li>Menambahkan CSS ke dalam file yang sama dengan HTML dengan menggunakan elemen <span class="label label-default">&lt;style&gt;</span></li><li>Menambahkan CSS ke dalam file terpisah dengan ekstensi <span class="label label-info">.css</span> dan menyertakannya pada halaman HTML dengan menggunakan elemen <span class="label label-default">&lt;link&gt;</span></li></ul><br>contoh: <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Judul Halaman<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;path/to/styles.css&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: blue;&quot;</span>&gt;</span>Ini adalah paragraf dengan gaya yang ditambahkan langsung.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;highlight&quot;</span>&gt;</span>Ini adalah paragraf dengan gaya yang ditambahkan melalui file CSS.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure></li><li>Selector dan Properties<br>CSS menggunakan selector untuk menentukan elemen HTML yang akan diberi gaya. Kemudian menggunakan properties untuk menentukan gaya yang diterapkan pada elemen tersebut.<br><br>contoh:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">p</span> &#123;<br>  <span class="hljs-attribute">color</span>: blue;<br>  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;<br>&#125;<br><br><span class="hljs-selector-class">.highlight</span> &#123;<br>  <span class="hljs-attribute">background-color</span>: yellow;<br>&#125;<br></code></pre></td></tr></table></figure></li><li>Cascade dan Inheritance<br>CSS memiliki mekanisme yang disebut Cascade yang berarti gaya yang diterapkan pada suatu elemen dapat diubah atau ditimpa oleh gaya yang diterapkan pada elemen anaknya. Sedangkan Inheritance berarti gaya yang diterapkan pada elemen induk dapat diterapkan juga pada elemen anaknya.<br>Itulah dasar-dasar dari CSS. Pada bagian selanjutnya, kita akan mempelajari lebih dalam tentang cara menambahkan gaya yang lebih kompleks pada halaman web menggunakan CSS.<br> <br>Selamat belajar dan semoga sukses dalam pembuatan halaman web Anda!</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>front end</category>
+      
+      <category>web dev</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>html</tag>
+      
+      <tag>css</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>belajar html part3</title>
     <link href="/2023/01/15/belajar-html-part3/"/>
     <url>/2023/01/15/belajar-html-part3/</url>
@@ -23,8 +193,6 @@
     <tags>
       
       <tag>html</tag>
-      
-      <tag>tutorial</tag>
       
       <tag>css</tag>
       
@@ -55,8 +223,6 @@
       
       <tag>html</tag>
       
-      <tag>tutorial</tag>
-      
     </tags>
     
   </entry>
@@ -83,8 +249,6 @@
     <tags>
       
       <tag>html</tag>
-      
-      <tag>tutorial</tag>
       
     </tags>
     
