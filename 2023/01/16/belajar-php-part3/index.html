@@ -17,16 +17,16 @@
   <meta name="author" content="hamzahxou">
   <meta name="keywords" content="blog, teknologi, blogging, tips, tutorial, informatif, Hamzahxou.">
   
-    <meta name="description" content="Pada bagian keempat ini, kita akan belajar tentang cara mengamanan aplikasi web yang dibuat dengan PHP.  Validasi InputSalah satu cara untuk menjaga keamanan aplikasi web adalah dengan melakukan valid">
+    <meta name="description" content="Pada bagian ketiga ini, kita akan belajar tentang cara mengamanan aplikasi web yang dibuat dengan PHP.  Validasi InputSalah satu cara untuk menjaga keamanan aplikasi web adalah dengan melakukan valida">
 <meta property="og:type" content="article">
 <meta property="og:title" content="belajar php part3">
 <meta property="og:url" content="https://blogworlds.github.io/2023/01/16/belajar-php-part3/index.html">
 <meta property="og:site_name" content="blogworlds">
-<meta property="og:description" content="Pada bagian keempat ini, kita akan belajar tentang cara mengamanan aplikasi web yang dibuat dengan PHP.  Validasi InputSalah satu cara untuk menjaga keamanan aplikasi web adalah dengan melakukan valid">
+<meta property="og:description" content="Pada bagian ketiga ini, kita akan belajar tentang cara mengamanan aplikasi web yang dibuat dengan PHP.  Validasi InputSalah satu cara untuk menjaga keamanan aplikasi web adalah dengan melakukan valida">
 <meta property="og:locale" content="id_ID">
 <meta property="og:image" content="https://blogworlds.github.io/img/belajar-php-part3.png">
 <meta property="article:published_time" content="2023-01-16T03:11:58.000Z">
-<meta property="article:modified_time" content="2023-01-16T03:45:12.528Z">
+<meta property="article:modified_time" content="2023-01-16T04:18:28.452Z">
 <meta property="article:author" content="hamzahxou">
 <meta property="article:tag" content="html">
 <meta property="article:tag" content="php">
@@ -291,7 +291,7 @@
             
               <div class="markdown-body">
                 
-                <p>Pada bagian keempat ini, kita akan belajar tentang cara mengamanan aplikasi web yang dibuat dengan PHP.</p>
+                <p>Pada bagian ketiga ini, kita akan belajar tentang cara mengamanan aplikasi web yang dibuat dengan PHP.</p>
 <ol>
 <li>Validasi Input<br>Salah satu cara untuk menjaga keamanan aplikasi web adalah dengan melakukan validasi input yang diterima dari user. Anda dapat mengecek apakah input yang diterima sesuai dengan format yang diharapkan atau tidak, seperti memastikan bahwa email yang diterima benar-benar merupakan alamat email yang valid.<br><br>contoh: <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-keyword">if</span> (!<span class="hljs-title function_ invoke__">filter_var</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;email&#x27;</span>], FILTER_VALIDATE_EMAIL)) &#123;<br>  <span class="hljs-keyword">die</span>(<span class="hljs-string">&quot;Email yang Anda masukkan tidak valid&quot;</span>);<br>&#125;<br></code></pre></td></tr></table></figure></li>
 <li>Sanitasi Data<br>Selain melakukan validasi input, Anda juga harus melakukan sanitasi data yang diterima dari user untuk mencegah serangan SQL injection atau XSS. Anda dapat menggunakan fungsi seperti <span class="label label-default">mysqli_real_escape_string</span> atau <span class="label label-default">PDO::quote</span> untuk menghilangkan karakter yang tidak diinginkan dari data input.<br><br>contoh:<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$nama</span> = <span class="hljs-title function_ invoke__">mysqli_real_escape_string</span>(<span class="hljs-variable">$koneksi</span>, <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;nama&#x27;</span>]);<br></code></pre></td></tr></table></figure></li>

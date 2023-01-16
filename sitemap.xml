@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blogworlds.github.io/about/index.html</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogworlds.github.io/2023/01/16/belajar-php-part3/</loc>
+    
+    <lastmod>2023-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blogworlds.github.io/2023/01/16/belajar-php-part1/</loc>
     
     <lastmod>2023-01-16</lastmod>
@@ -12,15 +30,6 @@
   
   <url>
     <loc>https://blogworlds.github.io/2023/01/16/belajar-php-part2/</loc>
-    
-    <lastmod>2023-01-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogworlds.github.io/2023/01/16/belajar-php-part3/</loc>
     
     <lastmod>2023-01-16</lastmod>
     
@@ -111,15 +120,6 @@
   
   <url>
     <loc>https://blogworlds.github.io/2023/01/15/belajar-javascript-part2/</loc>
-    
-    <lastmod>2023-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogworlds.github.io/about/index.html</loc>
     
     <lastmod>2023-01-15</lastmod>
     
