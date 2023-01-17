@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>cara membuat blog dengan hexo</title>
+    <link href="/2023/01/17/cara-membuat-blog-dengan-hexo/"/>
+    <url>/2023/01/17/cara-membuat-blog-dengan-hexo/</url>
+    
+    <content type="html"><![CDATA[<p><b>Hexo adalah platform pembuatan blog yang populer dan mudah digunakan.</b> Ini adalah pilihan yang baik bagi Anda yang ingin membuat blog pribadi atau profesional tanpa harus mengeluarkan banyak waktu dan usaha. Dalam panduan ini, kami akan menunjukkan kepada Anda cara membuat blog dengan Hexo dari awal.</p><h4 id="Langkah-1-Instal-Node-js-dan-Git"><a href="#Langkah-1-Instal-Node-js-dan-Git" class="headerlink" title="Langkah 1: Instal Node.js dan Git"></a>Langkah 1: Instal Node.js dan Git</h4><p>Sebelum memulai, Anda harus memiliki <span class="label label-default">Node.js</span> dan <span class="label label-default">Git</span> terinstal di komputer Anda. <b>Node.js</b> adalah platform yang digunakan oleh Hexo untuk berjalan, sementara <b>Git</b> digunakan untuk mengelola versi dari blog Anda. Anda dapat mengunduh <a href="https://nodejs.org/en/download/">Node.js</a> dan <a href="https://git-scm.com/downloads">Git</a> dari situs web resmi masing-masing.</p><div class="note note-info">            <p>untuk termux dapat menggunakan perintah:<br>nodejs<br><span class="label label-default">pkg install nodejs</span><br>git<br><span class="label label-default">pkg install git</span></p>          </div><h4 id="Langkah-2-Install-Hexo"><a href="#Langkah-2-Install-Hexo" class="headerlink" title="Langkah 2: Install Hexo"></a>Langkah 2: Install Hexo</h4><p>Setelah Node.js dan Git terinstal, Anda dapat menginstal Hexo dengan menjalankan perintah berikut di Command Prompt atau Terminal:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli<br></code></pre></td></tr></table></figure><p>Ini akan menginstal Hexo di komputer Anda dan Anda dapat menjalankan perintah Hexo dari mana saja.</p><h4 id="Langkah-3-Buat-Direktori-Blog"><a href="#Langkah-3-Buat-Direktori-Blog" class="headerlink" title="Langkah 3: Buat Direktori Blog"></a>Langkah 3: Buat Direktori Blog</h4><p>Selanjutnya, Anda perlu membuat direktori untuk blog Anda. Buka Command Prompt atau Terminal dan buat direktori baru dengan perintah:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">mkdir</span> myHexo<br></code></pre></td></tr></table></figure><p>Ganti <span class="label label-default">myHexo</span> dengan nama direktori yang Anda inginkan. Kemudian masuk ke direktori tersebut dengan perintah:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> myHexo<br></code></pre></td></tr></table></figure><h4 id="Langkah-4-Inisialisasi-Blog"><a href="#Langkah-4-Inisialisasi-Blog" class="headerlink" title="Langkah 4: Inisialisasi Blog"></a>Langkah 4: Inisialisasi Blog</h4><p>Sekarang Anda dapat menginisialisasi blog Anda dengan perintah Hexo:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init<br></code></pre></td></tr></table></figure><p>Ini akan menyiapkan struktur direktori untuk blog Anda dan menambahkan beberapa file yang dibutuhkan.</p><h4 id="Langkah-5-Tambahkan-Konten"><a href="#Langkah-5-Tambahkan-Konten" class="headerlink" title="Langkah 5: Tambahkan Konten"></a>Langkah 5: Tambahkan Konten</h4><p>Sekarang Anda dapat mulai menambahkan konten ke blog Anda. Anda dapat menambahkan posting baru dengan perintah:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new blog-hexo-pertama<br></code></pre></td></tr></table></figure><h4 id="Langkah-6-Jalankan-Server-Preview"><a href="#Langkah-6-Jalankan-Server-Preview" class="headerlink" title="Langkah 6: Jalankan Server Preview"></a>Langkah 6: Jalankan Server Preview</h4><p>Sekarang Anda dapat melihat blog Anda dalam tindakan dengan menjalankan server preview. Anda dapat menjalankan server dengan perintah:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo server<br></code></pre></td></tr></table></figure><p>Ini akan memulai server di alamat <span class="label label-info">http://localhost:4000/</span>. Anda dapat membuka alamat tersebut di web browser Anda dan melihat blog Anda.</p><h4 id="Langkah-7-Publikasikan-Blog"><a href="#Langkah-7-Publikasikan-Blog" class="headerlink" title="Langkah 7: Publikasikan Blog"></a>Langkah 7: Publikasikan Blog</h4><p>Setelah Anda merasa yakin dengan blog Anda, Anda dapat menerbitkannya dengan perintah:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo deploy<br></code></pre></td></tr></table></figure><br><div class="note note-warning">            <p>pada bagian langkah deploy anda bisa membaca pada dokumen <b><a href="https://hexo.io/docs/one-command-deployment">deploy</a> </b>agar tidak terjadi error.</p>          </div>Selamat! Anda sekarang memiliki blog yang dibuat menggunakan Hexo. Anda dapat menambahkan konten, mengubah tema, dan melakukan banyak hal lain untuk menyesuaikan blog Anda sesuai keinginan Anda. <br><p>Jangan lupa untuk terus belajar dan mengeksplorasi fitur-fitur Hexo untuk meningkatkan blog Anda.<br>Ini akan meng-upload blog Anda ke hosting yang Anda pilih sebelumnya.silahkan kunjungi web <a href="https://hexo.io/docs/">Hexo.io</a> untuk detail lebih lanjut </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>nodejs</category>
+      
+      <category>npm</category>
+      
+      <category>terminal</category>
+      
+      <category>tutorial</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>belajar php part3</title>
     <link href="/2023/01/16/belajar-php-part3/"/>
     <url>/2023/01/16/belajar-php-part3/</url>

@@ -17,26 +17,24 @@
   <meta name="author" content="hamzahxou">
   <meta name="keywords" content="blog, teknologi, blogging, tips, tutorial, informatif, Hamzahxou.">
   
-    <meta name="description" content="Pada bagian ketiga ini, kita akan belajar tentang cara mengamanan aplikasi web yang dibuat dengan PHP.  Validasi InputSalah satu cara untuk menjaga keamanan aplikasi web adalah dengan melakukan valida">
+    <meta name="description" content="Hexo adalah platform pembuatan blog yang populer dan mudah digunakan. Ini adalah pilihan yang baik bagi Anda yang ingin membuat blog pribadi atau profesional tanpa harus mengeluarkan banyak waktu dan">
 <meta property="og:type" content="article">
-<meta property="og:title" content="belajar php part3">
-<meta property="og:url" content="https://blogworlds.github.io/2023/01/16/belajar-php-part3/index.html">
+<meta property="og:title" content="cara membuat blog dengan hexo">
+<meta property="og:url" content="https://blogworlds.github.io/2023/01/17/cara-membuat-blog-dengan-hexo/index.html">
 <meta property="og:site_name" content="blogworlds">
-<meta property="og:description" content="Pada bagian ketiga ini, kita akan belajar tentang cara mengamanan aplikasi web yang dibuat dengan PHP.  Validasi InputSalah satu cara untuk menjaga keamanan aplikasi web adalah dengan melakukan valida">
+<meta property="og:description" content="Hexo adalah platform pembuatan blog yang populer dan mudah digunakan. Ini adalah pilihan yang baik bagi Anda yang ingin membuat blog pribadi atau profesional tanpa harus mengeluarkan banyak waktu dan">
 <meta property="og:locale" content="id_ID">
-<meta property="og:image" content="https://blogworlds.github.io/img/belajar-php-part3.png">
-<meta property="article:published_time" content="2023-01-16T03:11:58.000Z">
-<meta property="article:modified_time" content="2023-01-16T04:18:28.452Z">
+<meta property="og:image" content="https://blogworlds.github.io/img/cara-membuat-blog-dengan-hexo.png">
+<meta property="article:published_time" content="2023-01-17T04:56:21.000Z">
+<meta property="article:modified_time" content="2023-01-17T07:43:53.384Z">
 <meta property="article:author" content="hamzahxou">
-<meta property="article:tag" content="html">
-<meta property="article:tag" content="php">
-<meta property="article:tag" content="sql">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blogworlds.github.io/img/belajar-php-part3.png">
+<meta name="twitter:image" content="https://blogworlds.github.io/img/cara-membuat-blog-dengan-hexo.png">
   
   
   
-  <title>belajar php part3 - blogworlds</title>
+  <title>cara membuat blog dengan hexo - blogworlds</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +212,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="belajar php part3"></span>
+            <span id="subtitle" data-typed-text="cara membuat blog dengan hexo"></span>
           
         </div>
 
@@ -225,8 +223,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-16 10:11" pubdate>
-          16 Januari 2023 pagi
+        <time datetime="2023-01-17 11:56" pubdate>
+          17 Januari 2023 siang
         </time>
       </span>
     
@@ -237,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.9k words
+          2.2k words
         
       </span>
     
@@ -248,7 +246,7 @@
         
         
         
-          16 mins
+          19 mins
         
       </span>
     
@@ -286,26 +284,41 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">belajar php part3</h1>
+            <h1 style="display: none">cara membuat blog dengan hexo</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Pada bagian ketiga ini, kita akan belajar tentang cara mengamanan aplikasi web yang dibuat dengan PHP.</p>
-<ol>
-<li>Validasi Input<br>Salah satu cara untuk menjaga keamanan aplikasi web adalah dengan melakukan validasi input yang diterima dari user. Anda dapat mengecek apakah input yang diterima sesuai dengan format yang diharapkan atau tidak, seperti memastikan bahwa email yang diterima benar-benar merupakan alamat email yang valid.<br><br>contoh: <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-keyword">if</span> (!<span class="hljs-title function_ invoke__">filter_var</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;email&#x27;</span>], FILTER_VALIDATE_EMAIL)) &#123;<br>  <span class="hljs-keyword">die</span>(<span class="hljs-string">&quot;Email yang Anda masukkan tidak valid&quot;</span>);<br>&#125;<br></code></pre></td></tr></table></figure></li>
-<li>Sanitasi Data<br>Selain melakukan validasi input, Anda juga harus melakukan sanitasi data yang diterima dari user untuk mencegah serangan SQL injection atau XSS. Anda dapat menggunakan fungsi seperti <span class="label label-default">mysqli_real_escape_string</span> atau <span class="label label-default">PDO::quote</span> untuk menghilangkan karakter yang tidak diinginkan dari data input.<br><br>contoh:<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$nama</span> = <span class="hljs-title function_ invoke__">mysqli_real_escape_string</span>(<span class="hljs-variable">$koneksi</span>, <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;nama&#x27;</span>]);<br></code></pre></td></tr></table></figure></li>
-<li>Enkripsi Data<br>Data sensitif seperti password harus dienkripsi sebelum disimpan ke dalam database atau dikirim ke client. Anda dapat menggunakan fungsi seperti <span class="label label-default">password_hash</span> atau <span class="label label-default">openssl_encrypt</span> untuk mengenkripsi data tersebut. Jangan lupa untuk menyimpan salt atau iv yang digunakan untuk enkripsi agar dapat digunakan untuk proses decrypt nantinya.<br>
-contoh: 
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$password</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;password&#x27;</span>];<br><span class="hljs-variable">$password_hash</span> = <span class="hljs-title function_ invoke__">password_hash</span>(<span class="hljs-variable">$password</span>, PASSWORD_DEFAULT);<br></code></pre></td></tr></table></figure></li>
-<li>Autentikasi dan Otorisasi<br>Anda harus menyediakan mekanisme autentikasi dan otorisasi yang aman untuk mengontrol akses user ke aplikasi web Anda. Anda dapat menggunakan sistem login dengan password yang dienkripsi atau menggunakan metode autentikasi lain seperti token atau OAuth. Anda juga harus mengatur hak akses user secara benar agar user hanya dapat mengakses fitur yang sesuai dengan level aksesnya.<br>
-Itulah beberapa cara untuk menjaga keamanan aplikasi web yang dibuat dengan PHP. 
+                <p><b>Hexo adalah platform pembuatan blog yang populer dan mudah digunakan.</b> Ini adalah pilihan yang baik bagi Anda yang ingin membuat blog pribadi atau profesional tanpa harus mengeluarkan banyak waktu dan usaha. Dalam panduan ini, kami akan menunjukkan kepada Anda cara membuat blog dengan Hexo dari awal.</p>
+<h4 id="Langkah-1-Instal-Node-js-dan-Git"><a href="#Langkah-1-Instal-Node-js-dan-Git" class="headerlink" title="Langkah 1: Instal Node.js dan Git"></a>Langkah 1: Instal Node.js dan Git</h4><p>Sebelum memulai, Anda harus memiliki <span class="label label-default">Node.js</span> dan <span class="label label-default">Git</span> terinstal di komputer Anda. <b>Node.js</b> adalah platform yang digunakan oleh Hexo untuk berjalan, sementara <b>Git</b> digunakan untuk mengelola versi dari blog Anda. Anda dapat mengunduh <a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a> dan <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a> dari situs web resmi masing-masing.</p>
+<div class="note note-info">
+            <p>untuk termux dapat menggunakan perintah:<br>nodejs<br><span class="label label-default">pkg install nodejs</span><br>git<br><span class="label label-default">pkg install git</span></p>
+          </div>
+<h4 id="Langkah-2-Install-Hexo"><a href="#Langkah-2-Install-Hexo" class="headerlink" title="Langkah 2: Install Hexo"></a>Langkah 2: Install Hexo</h4><p>Setelah Node.js dan Git terinstal, Anda dapat menginstal Hexo dengan menjalankan perintah berikut di Command Prompt atau Terminal:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli<br></code></pre></td></tr></table></figure>
+<p>Ini akan menginstal Hexo di komputer Anda dan Anda dapat menjalankan perintah Hexo dari mana saja.</p>
+<h4 id="Langkah-3-Buat-Direktori-Blog"><a href="#Langkah-3-Buat-Direktori-Blog" class="headerlink" title="Langkah 3: Buat Direktori Blog"></a>Langkah 3: Buat Direktori Blog</h4><p>Selanjutnya, Anda perlu membuat direktori untuk blog Anda. Buka Command Prompt atau Terminal dan buat direktori baru dengan perintah:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">mkdir</span> myHexo<br></code></pre></td></tr></table></figure>
+<p>Ganti <span class="label label-default">myHexo</span> dengan nama direktori yang Anda inginkan. Kemudian masuk ke direktori tersebut dengan perintah:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> myHexo<br></code></pre></td></tr></table></figure>
+<h4 id="Langkah-4-Inisialisasi-Blog"><a href="#Langkah-4-Inisialisasi-Blog" class="headerlink" title="Langkah 4: Inisialisasi Blog"></a>Langkah 4: Inisialisasi Blog</h4><p>Sekarang Anda dapat menginisialisasi blog Anda dengan perintah Hexo:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init<br></code></pre></td></tr></table></figure>
+<p>Ini akan menyiapkan struktur direktori untuk blog Anda dan menambahkan beberapa file yang dibutuhkan.</p>
+<h4 id="Langkah-5-Tambahkan-Konten"><a href="#Langkah-5-Tambahkan-Konten" class="headerlink" title="Langkah 5: Tambahkan Konten"></a>Langkah 5: Tambahkan Konten</h4><p>Sekarang Anda dapat mulai menambahkan konten ke blog Anda. Anda dapat menambahkan posting baru dengan perintah:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new blog-hexo-pertama<br></code></pre></td></tr></table></figure>
+<h4 id="Langkah-6-Jalankan-Server-Preview"><a href="#Langkah-6-Jalankan-Server-Preview" class="headerlink" title="Langkah 6: Jalankan Server Preview"></a>Langkah 6: Jalankan Server Preview</h4><p>Sekarang Anda dapat melihat blog Anda dalam tindakan dengan menjalankan server preview. Anda dapat menjalankan server dengan perintah:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo server<br></code></pre></td></tr></table></figure>
+<p>Ini akan memulai server di alamat <span class="label label-info">http://localhost:4000/</span>. Anda dapat membuka alamat tersebut di web browser Anda dan melihat blog Anda.</p>
+<h4 id="Langkah-7-Publikasikan-Blog"><a href="#Langkah-7-Publikasikan-Blog" class="headerlink" title="Langkah 7: Publikasikan Blog"></a>Langkah 7: Publikasikan Blog</h4><p>Setelah Anda merasa yakin dengan blog Anda, Anda dapat menerbitkannya dengan perintah:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo deploy<br></code></pre></td></tr></table></figure>
 <br>
 <div class="note note-warning">
-            <p>Selalu ingat untuk tetap mengevaluasi dan memperbarui keamanan aplikasi Anda sesuai dengan perkembangan teknologi dan ancaman keamanan yang ada. </p>
-          </div></li>
-</ol>
-<p>Selamat belajar dan semoga sukses dalam mengembangkan aplikasi web yang aman dan berkualitas!</p>
+            <p>pada bagian langkah deploy anda bisa membaca pada dokumen <b><a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment">deploy</a> </b>agar tidak terjadi error.</p>
+          </div>
+Selamat! Anda sekarang memiliki blog yang dibuat menggunakan Hexo. Anda dapat menambahkan konten, mengubah tema, dan melakukan banyak hal lain untuk menyesuaikan blog Anda sesuai keinginan Anda. 
+<br>
+
+<p>Jangan lupa untuk terus belajar dan mengeksplorasi fitur-fitur Hexo untuk meningkatkan blog Anda.<br>Ini akan meng-upload blog Anda ke hosting yang Anda pilih sebelumnya.silahkan kunjungi web <a target="_blank" rel="noopener" href="https://hexo.io/docs/">Hexo.io</a> untuk detail lebih lanjut </p>
 
                 
               </div>
@@ -324,7 +337,24 @@ Itulah beberapa cara untuk menjaga keamanan aplikasi web yang dibuat dengan PHP.
     
       <span class="category-chain">
         
-  <a href="/categories/front-end/" class="category-chain-item">front end</a>
+  <a href="/categories/nodejs/" class="category-chain-item">nodejs</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/nodejs/npm/" class="category-chain-item">npm</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/terminal/" class="category-chain-item">terminal</a>
   
   
 
@@ -334,37 +364,7 @@ Itulah beberapa cara untuk menjaga keamanan aplikasi web yang dibuat dengan PHP.
     
       <span class="category-chain">
         
-  <a href="/categories/web-dev/" class="category-chain-item">web dev</a>
-  
-  
-
-      </span>
-    
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/back-end/" class="category-chain-item">back end</a>
-  
-  
-
-      </span>
-    
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/web-server/" class="category-chain-item">web server</a>
-  
-  
-
-      </span>
-    
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/database/" class="category-chain-item">database</a>
+  <a href="/categories/tutorial/" class="category-chain-item">tutorial</a>
   
   
 
@@ -379,11 +379,7 @@ Itulah beberapa cara untuk menjaga keamanan aplikasi web yang dibuat dengan PHP.
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/html/">#html</a>
-      
-        <a href="/tags/php/">#php</a>
-      
-        <a href="/tags/sql/">#sql</a>
+        <a href="/tags/hexo/">#hexo</a>
       
     </div>
   
@@ -395,8 +391,8 @@ Itulah beberapa cara untuk menjaga keamanan aplikasi web yang dibuat dengan PHP.
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>belajar php part3</div>
-      <div>https://blogworlds.github.io/2023/01/16/belajar-php-part3/</div>
+      <div>cara membuat blog dengan hexo</div>
+      <div>https://blogworlds.github.io/2023/01/17/cara-membuat-blog-dengan-hexo/</div>
     </div>
     <div class="license-meta">
       
@@ -408,7 +404,7 @@ Itulah beberapa cara untuk menjaga keamanan aplikasi web yang dibuat dengan PHP.
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>16 Januari 2023</div>
+          <div>17 Januari 2023</div>
         </div>
       
       
@@ -440,18 +436,12 @@ Itulah beberapa cara untuk menjaga keamanan aplikasi web yang dibuat dengan PHP.
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/17/cara-membuat-blog-dengan-hexo/" title="cara membuat blog dengan hexo">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">cara membuat blog dengan hexo</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/16/belajar-php-part2/" title="belajar php part2">
-                        <span class="hidden-mobile">belajar php part2</span>
+                      <a href="/2023/01/16/belajar-php-part3/" title="belajar php part3">
+                        <span class="hidden-mobile">belajar php part3</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -471,8 +461,8 @@ Itulah beberapa cara untuk menjaga keamanan aplikasi web yang dibuat dengan PHP.
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'https://blogworlds.github.io/2023/01/16/belajar-php-part3/';
-          this.page.identifier = '/2023/01/16/belajar-php-part3/';
+          this.page.url = 'https://blogworlds.github.io/2023/01/17/cara-membuat-blog-dengan-hexo/';
+          this.page.identifier = '/2023/01/17/cara-membuat-blog-dengan-hexo/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
