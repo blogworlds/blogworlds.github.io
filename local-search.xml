@@ -4,6 +4,107 @@
   
   
   <entry>
+    <title>Fungsi strlen di PHP Menghitung Panjang String</title>
+    <link href="/2023/01/19/fungsi-strlen-di-php/"/>
+    <url>/2023/01/19/fungsi-strlen-di-php/</url>
+    
+    <content type="html"><![CDATA[<p>PHP menyediakan fungsi bawaan yang bernama <span class="label label-info">strlen</span> yang digunakan untuk menghitung panjang string. Fungsi ini sangat berguna dalam berbagai situasi, seperti mengecek apakah input user cukup panjang, menentukan jumlah karakter dari sebuah string, atau menentukan jumlah karakter dari sebuah password.</p><p>Sintaks dari fungsi strlen adalah sebagai berikut:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-keyword">string</span>)<br></code></pre></td></tr></table></figure><p>Parameter yang digunakan adalah string yang akan dihitung panjangnya, yaitu string yang akan dihitung jumlah karakter.</p><p>Contoh penggunaan fungsi strlen:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;menghitung karakter&quot;</span>;<br><span class="hljs-variable">$length</span> = <span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$string</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$length</span>; <br><span class="hljs-comment">// Output: 19</span><br></code></pre></td></tr></table></figure><p>Dalam contoh di atas, fungsi strlen digunakan untuk menghitung panjang string “menghitung karakter” yaitu 19 karakter.</p><p>Anda juga dapat menggunakan fungsi strlen untuk mengecek panjang input user sebelum menyimpan data ke database.</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$password</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;password&#x27;</span>];<br><span class="hljs-keyword">if</span>(<span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$password</span>) &lt; <span class="hljs-number">8</span>)&#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Password harus lebih dari 8 karakter&quot;</span>;<br>&#125;<span class="hljs-keyword">else</span>&#123;<br>    <span class="hljs-comment">//proses menyimpan data</span><br>&#125;<br></code></pre></td></tr></table></figure><div class="note note-info">            <p>Fungsi strlen sangat berguna untuk mengecek panjang string, seperti password, nama, email, atau data lainnya.</p>          </div><p>Itu adalah beberapa penjelasan tentang fungsi strlen di PHP. Semoga dapat memberikan manfaat bagi Anda dalam memahami dan menggunakan fungsi ini dalam pengembangan aplikasi web Anda.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Fungsi html entity decode di PHP  Mengubah Karakter Entitas HTML ke Karakter ASCII</title>
+    <link href="/2023/01/19/fungsi-html-entity-decode-di-php/"/>
+    <url>/2023/01/19/fungsi-html-entity-decode-di-php/</url>
+    
+    <content type="html"><![CDATA[<p>PHP memiliki fungsi yang bernama <span class="label label-info">html_entity_decode</span> yang digunakan untuk mengubah karakter entitas HTML ke karakter ASCII. Fungsi ini sangat berguna untuk menangani data yang diterima dari sumber eksternal, seperti form HTML atau data dari database, yang mungkin mengandung karakter entitas HTML.</p><p>Sintaks dari fungsi html_entity_decode  adalah sebagai berikut:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-title function_ invoke__">html_entity_decode</span>(<span class="hljs-keyword">string</span>, flags, encoding)<br></code></pre></td></tr></table></figure><p>Parameter pertama yang digunakan adalah string yang akan diolah, yaitu string yang akan dikonversi dari karakter entitas HTML ke karakter ASCII. Parameter kedua adalah flags, yang digunakan untuk menentukan tipe konversi yang diinginkan. Parameter ketiga adalah encoding, yang digunakan untuk menentukan jenis encoding yang digunakan dalam string.<br>Contoh penggunaan fungsi html_entity_decode:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;&amp;lt;p&amp;gt;Ini adalah &amp;lt;strong&amp;gt;teks&amp;lt;/strong&amp;gt; dengan karakter entitas HTML yang akan diubah.&amp;lt;/p&amp;gt;&quot;</span>;<br><span class="hljs-variable">$string</span> = <span class="hljs-title function_ invoke__">html_entity_decode</span>(<span class="hljs-variable">$string</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$string</span>;<br> <span class="hljs-comment">// Output: &lt;p&gt;Ini adalah &lt;strong&gt;teks&lt;/strong&gt; dengan karakter entitas HTML yang akandiubah.&lt;/p&gt;</span><br></code></pre></td></tr></table></figure><p>Dalam contoh di atas, semua karakter entitas HTML yang digunakan dalam string, seperti <span class="label label-default">&lt;p&gt;</span> <span class="label label-default">&lt;strong&gt;</span> dan <span class="label label-default">&lt;/strong&lt;</span> akan diubah menjadi karakter ASCII yang sesuai, yaitu <span class="label label-info">&lt;p&gt;</span> <span class="label label-info">&lt;strong&gt;</span> dan <span class="label label-info">&lt;/strong&gt;</span>.</p><p>Selain itu, Anda juga dapat menentukan tipe konversi yang diinginkan dengan menggunakan flag <span class="label label-default">ENT_COMPAT</span> atau <span class="label label-default">ENT_QUOTES</span>. Flag <span class="label label-default">ENT_COMPAT</span> hanya akan mengubah karakter entitas yang digunakan untuk tanda kutip tunggal dan ganda, sedangkan flag <span class="label label-default">ENT_QUOTES</span> akan mengubah semua karakter entitas yang digunakan.</p><p>Contoh penggunaan flag <b>ENT_COMPAT</b>:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;&amp;lt;p&amp;gt;Ini adalah &amp;lt;strong&amp;gt;teks&amp;lt;/strong&amp;gt; dengan karakter entitas HTML yang akan diubah.&amp;lt;/p&amp;gt;&quot;</span>;<br><span class="hljs-variable">$string</span> = <span class="hljs-title function_ invoke__">html_entity_decode</span>(<span class="hljs-variable">$string</span>, ENT_COMPAT);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$string</span>; <br><span class="hljs-comment">// Output: &lt;p&gt;Ini adalah &lt;strong&gt;teks&lt;/strong&gt; dengan karakter entitas HTML yang akan diubah.&lt;/p&gt;</span><br></code></pre></td></tr></table></figure><p>Fungsi html_entity_decode sangat berguna dalam menangani data yang diterima dari sumber eksternal dan memastikan bahwa data yang diterima dalam format yang sesuai.</p><p>Itu adalah beberapa penjelasan tentang fungsi html_entity_decode di PHP. Semoga dapat memberikan manfaat bagi Anda dalam memahami dan menggunakan fungsi ini dalam pengembangan aplikasi web Anda.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Fungsi Strip tags di PHP Penghapus Tag HTML dan PHP dari String</title>
+    <link href="/2023/01/19/fungsi-Strip-tags-di-php/"/>
+    <url>/2023/01/19/fungsi-Strip-tags-di-php/</url>
+    
+    <content type="html"><![CDATA[<p>Fungsi <span class="label label-default">strip_tags</span> di PHP adalah fungsi yang digunakan untuk menghapus tag HTML dan PHP dari string. Fungsi ini dapat digunakan untuk menghapus tag-tag yang tidak diinginkan dari sebuah string, seperti tag HTML yang digunakan untuk memformat teks, atau tag PHP yang digunakan untuk menambahkan logika ke halaman web.</p><p>Sintaks dari fungsi strip_tags adalah sebagai berikut:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-title function_ invoke__">strip_tags</span>(<span class="hljs-keyword">string</span>, allowed_tags)<br></code></pre></td></tr></table></figure><p>Parameter pertama yang digunakan adalah string yang akan diolah, yaitu string yang akan dibersihkan dari tag-tag yang tidak diinginkan. Parameter kedua adalah <span class="label label-default">allowed_tags</span> yang digunakan untuk menentukan tag-tag yang diizinkan dalam string. </p><div class="note note-info">            <p>Jika parameter kedua tidak diisi, maka semua tag akan dihapus.</p>          </div><p>Contoh penggunaan fungsi <b>strip_tags</b>:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;&lt;p&gt;Ini adalah &lt;strong&gt;teks&lt;/strong&gt; dengan tag &lt;i&gt;HTML&lt;/i&gt; yang akan dihapus.&lt;/p&gt;&quot;</span>;<br><span class="hljs-variable">$string</span> = <span class="hljs-title function_ invoke__">strip_tags</span>(<span class="hljs-variable">$string</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$string</span>; <br><span class="hljs-comment">// Output: Ini adalah teks dengan tag HTML yang akan dihapus.</span><br><span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure><p>Dalam contoh di atas, semua tag HTML yang digunakan dalam string, seperti <span class="label label-default">&lt;p&gt;</span> <span class="label label-default">&lt;strong&gt;</span> dan <span class="label label-default">&lt;i&gt;</span> akan dihapus.</p><p>Selain itu fungsi ini juga dapat digunakan untuk menghapus tag-tag yang tidak diinginkan saja dan menyimpan tag yang diinginkan.</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;&lt;p&gt;Ini adalah &lt;strong&gt;teks&lt;/strong&gt; dengan tag &lt;i&gt;HTML&lt;/i&gt; yang akan dihapus.&lt;/p&gt;&quot;</span>;<br><span class="hljs-variable">$string</span> = <span class="hljs-title function_ invoke__">strip_tags</span>(<span class="hljs-variable">$string</span>,<span class="hljs-string">&#x27;&lt;strong&gt;&#x27;</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$string</span>; <br></code></pre></td></tr></table></figure><p>output:</p><div class="note note-info">            <p>Ini adalah <strong>teks</strong> dengan tag HTML yang akan dihapus. </p>          </div><p>Fungsi <b>strip_tags</b> ini sangat berguna untuk menjaga keamanan aplikasi web karena dapat menghapus tag-tag yang tidak diinginkan yang dapat digunakan untuk melakukan serangan XSS (Cross-site scripting).</p><p>Itu adalah beberapa penjelasan tentang fungsi <b>strip_tags</b> di PHP. Semoga dapat memberikan manfaat bagi Anda dalam memahami dan menggunakan fungsi ini dalam pengembangan aplikasi web Anda. Jangan lupa untuk selalu menjaga keamanan aplikasi dengan menghapus tag-tag yang tidak diinginkan agar terhindar dari serangan XSS (Cross-site scripting).</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Cara Efektif Menghilangkan Rasa Malas sebagai Programmer</title>
     <link href="/2023/01/18/Cara-Efektif-Menghilangkan-Rasa-Malas-sebagai-Programmer/"/>
     <url>/2023/01/18/Cara-Efektif-Menghilangkan-Rasa-Malas-sebagai-Programmer/</url>
@@ -13,9 +114,9 @@
     
     <categories>
       
-      <category>teknologi</category>
-      
       <category>komputer</category>
+      
+      <category>teknologi</category>
       
       <category>kerja</category>
       
@@ -24,11 +125,11 @@
     
     <tags>
       
-      <tag>informasi</tag>
-      
       <tag>programmer</tag>
       
       <tag>produktivitas</tag>
+      
+      <tag>informasi</tag>
       
     </tags>
     

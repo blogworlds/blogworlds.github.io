@@ -17,25 +17,25 @@
   <meta name="author" content="hamzahxou">
   <meta name="keywords" content="blog, teknologi, blogging, tips, tutorial, informatif, Hamzahxou.">
   
-    <meta name="description" content="Pada bagian ketiga ini, kita akan belajar cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi web yang interaktif dan dinamis.  Integrasi dengan HTMLJavaScript dapat digabungkan d">
+    <meta name="description" content="PHP menyediakan fungsi bawaan yang bernama strlen yang digunakan untuk menghitung panjang string. Fungsi ini sangat berguna dalam berbagai situasi, seperti mengecek apakah input user cukup panjang, me">
 <meta property="og:type" content="article">
-<meta property="og:title" content="belajar javascript part3">
-<meta property="og:url" content="https://blogworlds.github.io/2023/01/15/belajar-javascript-part3/index.html">
+<meta property="og:title" content="Fungsi strlen di PHP Menghitung Panjang String">
+<meta property="og:url" content="https://blogworlds.github.io/2023/01/19/fungsi-strlen-di-php/index.html">
 <meta property="og:site_name" content="blogworlds">
-<meta property="og:description" content="Pada bagian ketiga ini, kita akan belajar cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi web yang interaktif dan dinamis.  Integrasi dengan HTMLJavaScript dapat digabungkan d">
+<meta property="og:description" content="PHP menyediakan fungsi bawaan yang bernama strlen yang digunakan untuk menghitung panjang string. Fungsi ini sangat berguna dalam berbagai situasi, seperti mengecek apakah input user cukup panjang, me">
 <meta property="og:locale" content="id_ID">
-<meta property="og:image" content="https://blogworlds.github.io/img/belajar-javascript-part3.png">
-<meta property="article:published_time" content="2023-01-15T14:40:01.000Z">
-<meta property="article:modified_time" content="2023-01-15T15:20:13.162Z">
+<meta property="og:image" content="https://blogworlds.github.io/img/fungsi-strlen.png">
+<meta property="article:published_time" content="2023-01-19T02:34:59.000Z">
+<meta property="article:modified_time" content="2023-01-19T02:57:09.913Z">
 <meta property="article:author" content="hamzahxou">
-<meta property="article:tag" content="html">
-<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="programmer">
+<meta property="article:tag" content="php">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blogworlds.github.io/img/belajar-javascript-part3.png">
+<meta name="twitter:image" content="https://blogworlds.github.io/img/fungsi-strlen.png">
   
   
   
-  <title>belajar javascript part3 - blogworlds</title>
+  <title>Fungsi strlen di PHP Menghitung Panjang String - blogworlds</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -264,7 +264,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="belajar javascript part3"></span>
+            <span id="subtitle" data-typed-text="Fungsi strlen di PHP Menghitung Panjang String"></span>
           
         </div>
 
@@ -275,8 +275,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-15 21:40" pubdate>
-          15 Januari 2023 malam
+        <time datetime="2023-01-19 09:34" pubdate>
+          19 Januari 2023 pagi
         </time>
       </span>
     
@@ -287,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.3k words
+          1.2k words
         
       </span>
     
@@ -298,7 +298,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         
         
-          20 mins
+          10 mins
         
       </span>
     
@@ -336,22 +336,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">belajar javascript part3</h1>
+            <h1 style="display: none">Fungsi strlen di PHP Menghitung Panjang String</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Pada bagian ketiga ini, kita akan belajar cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi web yang interaktif dan dinamis.</p>
-<ol>
-<li>Integrasi dengan HTML<br>JavaScript dapat digabungkan dengan HTML dengan menempatkan kode JavaScript di dalam tag script pada halaman HTML. Anda dapat menempatkan kode JavaScript di dalam tag script yang terletak di dalam head atau di dalam body halaman.<br><br>Contoh:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span><br><span class="language-javascript">      <span class="hljs-keyword">function</span> <span class="hljs-title function_">tampilkanPesan</span>(<span class="hljs-params"></span>) &#123;</span><br><span class="language-javascript">        <span class="hljs-title function_">alert</span>(<span class="hljs-string">&quot;Selamat Datang&quot;</span>);</span><br><span class="language-javascript">      &#125;</span><br><span class="language-javascript">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;tampilkanPesan()&quot;</span>&gt;</span>Tampilkan Pesan<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure></li>
-<li>Integrasi dengan CSS<br>JavaScript dapat digabungkan dengan CSS dengan mengubah gaya elemen HTML menggunakan JavaScript. Anda dapat mengubah gaya elemen menggunakan properti seperti <span class="label label-info">style</span> atau <span class="label label-info">className</span> dan mengatur gaya menggunakan CSS.<br><br>Contoh: <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">      <span class="hljs-selector-class">.merah</span> &#123;</span><br><span class="language-css">        <span class="hljs-attribute">color</span>: red;</span><br><span class="language-css">      &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;teks&quot;</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;document.getElementById(&#x27;teks&#x27;).className = &#x27;merah&#x27;&quot;</span>&gt;</span>Ubah Warna<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure></li>
-<li>Integrasi dengan File Eksternal<br>JavaScript dapat digabungkan dengan file eksternal dengan menyertakan file JavaScript dari luar menggunakan tag script dan menentukan source file. Anda dapat menyertakan file JavaScript dari folder lokal atau dari server lain.<br><br>Contoh:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;myscripts.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;tampilkanPesan()&quot;</span>&gt;</span>Tampilkan Pesan<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
-lalu buat file <span class="label label-info">myscripts.js</span><br>dan isi dengan script ini<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">tampilkanPesan</span>(<span class="hljs-params"></span>) &#123;<br>        <span class="hljs-title function_">alert</span>(<span class="hljs-string">&quot;Selamat Datang&quot;</span>);<br>      &#125;<br></code></pre></td></tr></table></figure>
-Itulah cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi web yang interaktif dan dinamis. Dengan menggabungkan ketiganya, kita dapat membuat aplikasi web yang memiliki tampilan yang menarik dan memiliki interaksi yang meningkatkan user experience. Anda dapat mengeksplorasi lebih lanjut mengenai cara menggabungkan ketiganya dengan mencoba membuat proyek web sendiri dan mencoba berbagai fitur yang ditawarkan oleh JavaScript, HTML, dan CSS. Selamat belajar!</li>
-</ol>
-<h2 id="terkait"><a href="#terkait" class="headerlink" title="terkait"></a>terkait</h2><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a href="https://blogworlds.github.io/2023/01/15/belajar-javascript-part1/">https://blogworlds.github.io/2023/01/15/belajar-javascript-part1/</a>
-<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a href="https://blogworlds.github.io/2023/01/15/belajar-javascript-part2/">https://blogworlds.github.io/2023/01/15/belajar-javascript-part2/</a>
-<a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>
+                <p>PHP menyediakan fungsi bawaan yang bernama <span class="label label-info">strlen</span> yang digunakan untuk menghitung panjang string. Fungsi ini sangat berguna dalam berbagai situasi, seperti mengecek apakah input user cukup panjang, menentukan jumlah karakter dari sebuah string, atau menentukan jumlah karakter dari sebuah password.</p>
+<p>Sintaks dari fungsi strlen adalah sebagai berikut:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-keyword">string</span>)<br></code></pre></td></tr></table></figure>
+<p>Parameter yang digunakan adalah string yang akan dihitung panjangnya, yaitu string yang akan dihitung jumlah karakter.</p>
+<p>Contoh penggunaan fungsi strlen:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;menghitung karakter&quot;</span>;<br><span class="hljs-variable">$length</span> = <span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$string</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$length</span>; <br><span class="hljs-comment">// Output: 19</span><br></code></pre></td></tr></table></figure>
+<p>Dalam contoh di atas, fungsi strlen digunakan untuk menghitung panjang string “menghitung karakter” yaitu 19 karakter.</p>
+<p>Anda juga dapat menggunakan fungsi strlen untuk mengecek panjang input user sebelum menyimpan data ke database.</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$password</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;password&#x27;</span>];<br><span class="hljs-keyword">if</span>(<span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$password</span>) &lt; <span class="hljs-number">8</span>)&#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Password harus lebih dari 8 karakter&quot;</span>;<br>&#125;<span class="hljs-keyword">else</span>&#123;<br>    <span class="hljs-comment">//proses menyimpan data</span><br>&#125;<br></code></pre></td></tr></table></figure>
+<div class="note note-info">
+            <p>Fungsi strlen sangat berguna untuk mengecek panjang string, seperti password, nama, email, atau data lainnya.</p>
+          </div>
+
+<p>Itu adalah beberapa penjelasan tentang fungsi strlen di PHP. Semoga dapat memberikan manfaat bagi Anda dalam memahami dan menggunakan fungsi ini dalam pengembangan aplikasi web Anda.</p>
+
                 
               </div>
             
@@ -369,7 +373,7 @@ Itulah cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi 
     
       <span class="category-chain">
         
-  <a href="/categories/front-end/" class="category-chain-item">front end</a>
+  <a href="/categories/web-dev/" class="category-chain-item">web dev</a>
   
   
 
@@ -379,7 +383,37 @@ Itulah cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi 
     
       <span class="category-chain">
         
-  <a href="/categories/web-dev/" class="category-chain-item">web dev</a>
+  <a href="/categories/back-end/" class="category-chain-item">back end</a>
+  
+  
+
+      </span>
+    
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/web-server/" class="category-chain-item">web server</a>
+  
+  
+
+      </span>
+    
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/database/" class="category-chain-item">database</a>
+  
+  
+
+      </span>
+    
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/fungsi/" class="category-chain-item">fungsi</a>
   
   
 
@@ -394,9 +428,9 @@ Itulah cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi 
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/html/">#html</a>
+        <a href="/tags/programmer/">#programmer</a>
       
-        <a href="/tags/javascript/">#javascript</a>
+        <a href="/tags/php/">#php</a>
       
     </div>
   
@@ -408,8 +442,8 @@ Itulah cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi 
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>belajar javascript part3</div>
-      <div>https://blogworlds.github.io/2023/01/15/belajar-javascript-part3/</div>
+      <div>Fungsi strlen di PHP Menghitung Panjang String</div>
+      <div>https://blogworlds.github.io/2023/01/19/fungsi-strlen-di-php/</div>
     </div>
     <div class="license-meta">
       
@@ -421,7 +455,7 @@ Itulah cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi 
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>15 Januari 2023</div>
+          <div>19 Januari 2023</div>
         </div>
       
       
@@ -453,18 +487,12 @@ Itulah cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi 
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/15/Teknologi-Terbaru-2023-Arah-Ke-depan-dalam-Inovasi-dan-Pembuatan/" title="Teknologi Terbaru 2023 Arah Ke depan dalam Inovasi dan Pembuatan">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Teknologi Terbaru 2023 Arah Ke depan dalam Inovasi dan Pembuatan</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/15/belajar-javascript-part2/" title="belajar javascript part2">
-                        <span class="hidden-mobile">belajar javascript part2</span>
+                      <a href="/2023/01/19/fungsi-html-entity-decode-di-php/" title="Fungsi html entity decode di PHP  Mengubah Karakter Entitas HTML ke Karakter ASCII">
+                        <span class="hidden-mobile">Fungsi html entity decode di PHP  Mengubah Karakter Entitas HTML ke Karakter ASCII</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -484,8 +512,8 @@ Itulah cara menggabungkan JavaScript dengan HTML dan CSS untuk membuat aplikasi 
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'https://blogworlds.github.io/2023/01/15/belajar-javascript-part3/';
-          this.page.identifier = '/2023/01/15/belajar-javascript-part3/';
+          this.page.url = 'https://blogworlds.github.io/2023/01/19/fungsi-strlen-di-php/';
+          this.page.identifier = '/2023/01/19/fungsi-strlen-di-php/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
