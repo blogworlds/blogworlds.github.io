@@ -4,6 +4,370 @@
   
   
   <entry>
+    <title>4 Tag PHP yang Wajib Diketahui untuk Pemrogram</title>
+    <link href="/2023/01/23/4-Tag-PHP-yang-Wajib-Diketahui-untuk-Pemrogram/"/>
+    <url>/2023/01/23/4-Tag-PHP-yang-Wajib-Diketahui-untuk-Pemrogram/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-info">            <p>4 Tag PHP yang Wajib Diketahui untuk Pemrogram</p>          </div><h4>1. isset()</h4><p>tag <span class="label label-info">isset()</span> digunakan untuk mengecek apakah sebuah variable sudah di-set atau belum. Jika variable sudah di-set, maka akan mengembalikan nilai true, jika belum maka akan mengembalikan nilai false. Ini sangat berguna untuk mengecek apakah sebuah variable sudah ditetapkan atau belum sebelum digunakan. Contohnya:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$data</span>;<br><span class="hljs-keyword">if</span>(<span class="hljs-keyword">isset</span>(<span class="hljs-variable">$data</span>))&#123;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Variable sudah di-set&quot;</span>;<br>&#125;<span class="hljs-keyword">else</span>&#123;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Variable belum di-set&quot;</span>;<br>&#125;<br><br><span class="hljs-comment">/* Output:</span><br><span class="hljs-comment">Variable belum di-set</span><br><span class="hljs-comment">*/</span><br></code></pre></td></tr></table></figure><h4>2. empty()</h4><p>tag <span class="label label-info">empty()</span> digunakan untuk mengecek apakah sebuah variable kosong atau tidak. Jika variable kosong, maka akan mengembalikan nilai true, jika tidak kosong maka akan mengembalikan nilai false. Ini sangat berguna untuk mengecek apakah sebuah variable memiliki nilai atau tidak sebelum digunakan. Contohnya:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$data</span> = <span class="hljs-string">&quot;&quot;</span>;<br><span class="hljs-keyword">if</span>(<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$data</span>))&#123;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Variable kosong&quot;</span>;<br>&#125;<span class="hljs-keyword">else</span>&#123;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Variable tidak kosong&quot;</span>;<br>&#125;<br><br><span class="hljs-comment">/* Output:</span><br><span class="hljs-comment">Variable kosong</span><br><span class="hljs-comment">*/</span><br></code></pre></td></tr></table></figure><h4>3. unset()</h4><p>tag <span class="label label-info">unset()</span> digunakan untuk menghapus sebuah variable. Ini berguna untuk membersihkan variable yang tidak digunakan lagi atau untuk menghapus variable yang akan diganti dengan nilai baru. Contohnya:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$data</span> = <span class="hljs-string">&quot;Hello World&quot;</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$data</span>; <span class="hljs-comment">//Output: Hello World</span><br><br><span class="hljs-keyword">unset</span>(<span class="hljs-variable">$data</span>);<br><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$data</span>; <span class="hljs-comment">//Output: Error, variable tidak di-set</span><br></code></pre></td></tr></table></figure><h4>4. echo vs print</h4><p> <span class="label label-info">echo</span> dan <span class="label label-info">print</span> adalah dua perintah yang digunakan untuk menampilkan output di PHP. Perbedaan antara keduanya adalah echo lebih cepat dalam eksekusi dan tidak mengembalikan nilai, sedangkan print lebih lambat dalam eksekusi dan mengembalikan nilai. Namun keduanya dapat digunakan secara interchangeably. Contohnya:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Hello World&quot;</span>;<br><span class="hljs-keyword">print</span> <span class="hljs-string">&quot;Hello World&quot;</span>;<br></code></pre></td></tr></table></figure><p>Itu hanyalah beberapa tag PHP yang wajib diketahui untuk pemrogram. Selalu ingat untuk mengecek dokumentasi PHP dan mencoba tag-tag yang baru untuk meningkatkan keterampilan Anda dalam pemrograman.</p><div class="note note-info">            <p>Dalam artikel ini hanya membahas beberapa dari banyaknya tag yang ada di PHP, sebaiknya sebagai programmer kita harus selalu memperbaharui pengetahuan kita dengan belajar dan mencoba tag yang baru.</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>5 Tag PHP yang Jarang Diketahui Namun Sangat Bermanfaat</title>
+    <link href="/2023/01/23/5-Tag-PHP-yang-Jarang-Diketahui-Namun-Sangat-Bermanfaat/"/>
+    <url>/2023/01/23/5-Tag-PHP-yang-Jarang-Diketahui-Namun-Sangat-Bermanfaat/</url>
+    
+    <content type="html"><![CDATA[<h3 id="5-Tag-PHP-yang-Jarang-Diketahui-Namun-Sangat-Bermanfaat"><a href="#5-Tag-PHP-yang-Jarang-Diketahui-Namun-Sangat-Bermanfaat" class="headerlink" title="5 Tag PHP yang Jarang Diketahui Namun Sangat Bermanfaat"></a>5 Tag PHP yang Jarang Diketahui Namun Sangat Bermanfaat</h3><hr><h4>1. header()</h4><p>tag header() digunakan untuk mengirim header HTTP ke browser. Ini bisa digunakan untuk mengatur waktu kadaluwarsa cache, atau untuk melakukan redirect ke halaman lain. Contohnya:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-title function_ invoke__">header</span>(<span class="hljs-string">&quot;Location: http://example.com&quot;</span>); <span class="hljs-comment">// Redirect ke halaman example.com</span><br><span class="hljs-title function_ invoke__">header</span>(<span class="hljs-string">&quot;Expires: Mon, 26 Jul 1997 05:00:00 GMT&quot;</span>); <span class="hljs-comment">// Set waktu kadaluwarsa cache</span><br></code></pre></td></tr></table></figure><h4>2. get_meta_tags()</h4><p>tag get_meta_tags() digunakan untuk mengambil meta tag dari suatu halaman web. Ini bisa digunakan untuk mengambil informasi seperti judul, deskripsi, atau kata kunci dari halaman lain. Contohnya:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$tags</span> = <span class="hljs-title function_ invoke__">get_meta_tags</span>(<span class="hljs-string">&#x27;http://blogworlds.github.io&#x27;</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$tags</span>[<span class="hljs-string">&#x27;author&#x27;</span>];<br></code></pre></td></tr></table></figure><h4>3. call_user_func()</h4><p>tag call_user_func() digunakan untuk memanggil suatu fungsi dengan parameter yang ditentukan. Ini bisa digunakan untuk memanggil fungsi yang ditentukan dalam variabel atau untuk memanggil fungsi dalam array. Contohnya:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$function</span> = <span class="hljs-string">&#x27;strtoupper&#x27;</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-title function_ invoke__">call_user_func</span>(<span class="hljs-variable">$function</span>, <span class="hljs-string">&#x27;hello world&#x27;</span>); <span class="hljs-comment">// Menampilkan &quot;HELLO WORLD&quot;</span><br></code></pre></td></tr></table></figure><h4>4. array_reduce()</h4><p>tag array_reduce() digunakan untuk mengurangi array menjadi satu nilai dengan menjalankan fungsi yang ditentukan. Ini bisa digunakan untuk menjumlahkan semua nilai dalam array atau untuk mencari nilai maksimum dari array. Contohnya:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$numbers</span> = <span class="hljs-keyword">array</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);<br><span class="hljs-variable">$sum</span> = <span class="hljs-title function_ invoke__">array_reduce</span>(<span class="hljs-variable">$numbers</span>, function(<span class="hljs-variable">$carry</span>, <span class="hljs-variable">$item</span>) &#123;<br>  <span class="hljs-keyword">return</span> <span class="hljs-variable">$carry</span>+<span class="hljs-variable">$item</span>;<br>&#125;);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$sum</span>; <span class="hljs-comment">// Menampilkan 15</span><br></code></pre></td></tr></table></figure><h4>5. array_filter()</h4><p>tag array_filter() digunakan untuk menyaring elemen-elemen dari array yang memenuhi kondisi yang ditentukan. Ini bisa digunakan untuk menyaring array berdasarkan nilai atau untuk menghapus elemen-elemen yang kosong. Contohnya:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$numbers</span> = <span class="hljs-keyword">array</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);<br><span class="hljs-variable">$even_numbers</span> = <span class="hljs-title function_ invoke__">array_filter</span>(<span class="hljs-variable">$numbers</span>, function(<span class="hljs-variable">$item</span>) &#123;<br>  <span class="hljs-keyword">return</span> <span class="hljs-variable">$item</span> % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>;<br>&#125;);<br><span class="hljs-title function_ invoke__">print_r</span>(<span class="hljs-variable">$even_numbers</span>); <span class="hljs-comment">// Menampilkan array(2, 4)</span><br></code></pre></td></tr></table></figure>Itulah beberapa tag PHP yang jarang diketahui namun sangat bermanfaat dalam pengembangan aplikasi. Selain itu, pastikan untuk selalu mempelajari dokumentasi dan referensi dari PHP untuk menemukan fitur-fitur baru yang dapat membantu Anda dalam pengembangan aplikasi.]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>fungsi scandir di php membaca isi dari sebuah direktori dalam bentuk array</title>
+    <link href="/2023/01/23/fungsi-scandir-di-php/"/>
+    <url>/2023/01/23/fungsi-scandir-di-php/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Memahami-scandir-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code"><a href="#Memahami-scandir-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code" class="headerlink" title="Memahami scandir() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code"></a>Memahami scandir() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code</h3><hr><h4>Apa itu scandir()?</h4><p><span class="label label-default">scandir()</span> adalah fungsi bawaan PHP yang digunakan untuk membaca isi dari sebuah direktori dan mengembalikan isinya dalam bentuk array. Fungsi ini akan mengembalikan semua file dan folder yang ada dalam direktori yang ditentukan, termasuk file dan folder yang tersembunyi.</p><h4>Penggunaan scandir()</h4><p>scandir() dapat digunakan untuk berbagai tujuan, seperti menampilkan daftar file dan folder yang ada dalam direktori, mencari file yang ditentukan, atau mengecek apakah sebuah file atau folder ada dalam direktori.</p><h4>Contoh Penggunaan scandir()</h4><p>Berikut ini adalah beberapa contoh penggunaan scandir():</p><p>Untuk menampilkan daftar file dan folder yang ada dalam direktori "images":</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$dir</span> = <span class="hljs-string">&quot;images&quot;</span>;<br><span class="hljs-variable">$files</span> = <span class="hljs-title function_ invoke__">scandir</span>(<span class="hljs-variable">$dir</span>);<br><span class="hljs-title function_ invoke__">print_r</span>(<span class="hljs-variable">$files</span>);<br></code></pre></td></tr></table></figure><p>Untuk mencari file "image.jpg" dalam direktori "images":</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$dir</span> = <span class="hljs-string">&quot;images&quot;</span>;<br><span class="hljs-variable">$files</span> = <span class="hljs-title function_ invoke__">scandir</span>(<span class="hljs-variable">$dir</span>);<br><span class="hljs-keyword">if</span> (<span class="hljs-title function_ invoke__">in_array</span>(<span class="hljs-string">&quot;image.jpg&quot;</span>, <span class="hljs-variable">$files</span>)) &#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;File ditemukan!&quot;</span>;<br>&#125; <span class="hljs-keyword">else</span> &#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;File tidak ditemukan!&quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>Untuk mengecek apakah sebuah folder "temp" ada dalam direktori "images":</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$dir</span> = <span class="hljs-string">&quot;images&quot;</span>;<br><span class="hljs-variable">$files</span> = <span class="hljs-title function_ invoke__">scandir</span>(<span class="hljs-variable">$dir</span>);<br><span class="hljs-keyword">if</span> (<span class="hljs-title function_ invoke__">in_array</span>(<span class="hljs-string">&quot;temp&quot;</span>, <span class="hljs-variable">$files</span>)) &#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Folder ditemukan!&quot;</span>;<br>&#125; <span class="hljs-keyword">else</span> &#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Folder tidak ditemukan!&quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>Jika direktori yang ditentukan tidak ada atau tidak dapat diakses, maka scandir() akan mengembalikan nilai FALSE.</p><p>Artikel ini menjelaskan penggunaan scandir() yang dapat digunakan untuk berbagai tujuan seperti menampilkan daftar file dan folder yang ada dalam direktori, mencari file yang ditentukan, atau mengecek apakah sebuah file atau folder ada dalam direktori. </p><div class="note note-warning">            <p>Namun perlu diingat jika direktori yang ditentukan tidak ada atau tidak dapat diakses, maka scandir() akan mengembalikan nilai FALSE. </p>          </div><p>Dengan menggunakan scandir() kita bisa mempermudah dalam mengelola data yang ada di dalam sebuah direktori.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>fungsi ucwords di php mengubah huruf pertama menjadi huruf besar</title>
+    <link href="/2023/01/23/fungsi-ucwords-di-php/"/>
+    <url>/2023/01/23/fungsi-ucwords-di-php/</url>
+    
+    <content type="html"><![CDATA[<h4 id="Memahami-ucwords-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code"><a href="#Memahami-ucwords-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code" class="headerlink" title="Memahami ucwords() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code"></a>Memahami ucwords() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code</h4><hr><h4>1. Apa itu ucwords()?</h4><p><span class="label label-default">ucwords()</span> adalah fungsi bawaan PHP yang digunakan untuk mengubah huruf pertama dari setiap kata dalam sebuah string menjadi huruf besar (uppercase). Fungsi ini hanya mengubah huruf pertama dari setiap kata dalam string, bukan semua huruf dalam string.</p><h4>2. Penggunaan ucwords()</h4><p>ucwords() dapat digunakan untuk berbagai tujuan, seperti mengubah huruf pertama dari setiap kata dalam nama pengguna, judul artikel, atau judul lagu menjadi huruf besar. Fungsi ini juga berguna untuk mengubah string yang tidak dalam format standar menjadi format standar.</p><h4>3. Contoh Penggunaan ucwords()</h4><p>Berikut ini adalah beberapa contoh penggunaan ucwords():</p><p>Untuk mengubah huruf pertama dari setiap kata dalam nama pengguna:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$name</span> = <span class="hljs-string">&quot;ren dye&quot;</span>;<br><span class="hljs-variable">$name</span> = <span class="hljs-title function_ invoke__">ucwords</span>(<span class="hljs-variable">$name</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$name</span>; <br><span class="hljs-comment">// Output: Ren Dye</span><br></code></pre></td></tr></table></figure><p>Untuk mengubah huruf pertama dari setiap kata dalam judul artikel:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$title</span> = <span class="hljs-string">&quot;fungsi ucwords di php&quot;</span>;<br><span class="hljs-variable">$title</span> = <span class="hljs-title function_ invoke__">ucwords</span>(<span class="hljs-variable">$title</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$title</span>; <br><span class="hljs-comment">// Output: Fungsi Ucwords Di Php</span><br></code></pre></td></tr></table></figure><p>Untuk mengubah huruf pertama dari setiap kata dalam judul lagu:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$song</span> = <span class="hljs-string">&quot;last friday night&quot;</span>;<br><span class="hljs-variable">$song</span> = <span class="hljs-title function_ invoke__">ucwords</span>(<span class="hljs-variable">$song</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$song</span>; <br><span class="hljs-comment">// Output: Last Friday Night</span><br></code></pre></td></tr></table></figure><p>Jika string mengandung karakter-karakter khusus seperti tanda hubung atau tanda kurung, maka ucwords() tidak akan mengubah karakter-karakter tersebut.</p><p>Fungsi ini juga berguna untuk mengubah string yang tidak dalam format standar menjadi format standar. </p><div class="note note-info">            <p>Namun perlu diingat jika string mengandung karakter-karakter khusus seperti tanda hubung atau tanda kurung, maka ucwords() tidak akan mengubah karakter-karakter tersebut.</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>fungsi implode di php menggabungkan elemen array menjadi sebuah string</title>
+    <link href="/2023/01/23/fungsi-implode-di-php/"/>
+    <url>/2023/01/23/fungsi-implode-di-php/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Memahami-implode-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code"><a href="#Memahami-implode-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code" class="headerlink" title="Memahami implode() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code"></a>Memahami implode() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code</h3><hr><h4>1. Apa itu implode()?</h4><p><span class="label label-default">implode()</span> adalah fungsi bawaan PHP yang digunakan untuk menggabungkan elemen-elemen array menjadi sebuah string. Fungsi ini menerima dua parameter: pembatas yang digunakan untuk menggabungkan elemen array dan array yang akan digabungkan.</p><h4>2. Penggunaan implode()</h4><p>implode() dapat digunakan untuk berbagai tujuan, seperti menggabungkan elemen-elemen array menjadi string koma-dipisah, menggabungkan elemen-elemen array menjadi string dengan pembatas tertentu, atau menggabungkan elemen-elemen array menjadi string untuk digunakan dalam query SQL.</p><h4>3. Contoh Penggunaan implode()</h4><p>Berikut ini adalah beberapa contoh penggunaan implode():</p><p>Untuk menggabungkan elemen-elemen array menjadi string koma-dipisah:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$fruits</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">&quot;apel&quot;</span>, <span class="hljs-string">&quot;pisang&quot;</span>, <span class="hljs-string">&quot;melon&quot;</span>);<br><span class="hljs-variable">$string</span> = <span class="hljs-title function_ invoke__">implode</span>(<span class="hljs-string">&quot;-&quot;</span>, <span class="hljs-variable">$fruits</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$string</span>; <br><span class="hljs-comment">// Output: &quot;apel-pisang-melon&quot;</span><br></code></pre></td></tr></table></figure><p>Untuk menggabungkan elemen-elemen array menjadi string dengan pembatas tertentu:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$parts</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">&quot;ren&quot;</span>, <span class="hljs-string">&quot;dye&quot;</span>, <span class="hljs-string">&quot;example.com&quot;</span>);<br><span class="hljs-variable">$string</span> = <span class="hljs-title function_ invoke__">implode</span>(<span class="hljs-string">&quot;:&quot;</span>, <span class="hljs-variable">$parts</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$string</span>;<br> <span class="hljs-comment">// Output: &quot;ren:dye:example.com&quot;</span><br></code></pre></td></tr></table></figure><p>Untuk menggabungkan elemen-elemen array menjadi string untuk digunakan dalam query SQL:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$fields</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">&quot;id&quot;</span>, <span class="hljs-string">&quot;email&quot;</span>, <span class="hljs-string">&quot;nama&quot;</span>);<br><span class="hljs-variable">$string</span> = <span class="hljs-title function_ invoke__">implode</span>(<span class="hljs-string">&quot;,&quot;</span>, <span class="hljs-variable">$fields</span>);<br><span class="hljs-variable">$query</span> = <span class="hljs-string">&quot;SELECT <span class="hljs-subst">$string</span> FROM users&quot;</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$query</span>; <br><span class="hljs-comment">// Output: &quot;SELECT id,email,nama FROM users&quot;</span><br></code></pre></td></tr></table></figure><p>Jika tidak ada pembatas yang ditentukan, maka implode() akan menggabungkan elemen-elemen array dengan pembatas kosong.</p><div class="note note-info">            <p>fungsi implode() yang ada di dalam bahasa pemrograman PHP, yang digunakan untuk menggabungkan elemen-elemen array menjadi sebuah string. penggunaan implode() yang dapat digunakan untuk berbagai tujuan seperti menggabungkan elemen-elemen array menjadi string koma-dipisah atau menggabungkan elemen-elemen array menjadi string untuk digunakan dalam query SQL.</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>fungsi rtrim di php menghapus karakter tertentu</title>
+    <link href="/2023/01/23/fungsi-rtrim-di-php/"/>
+    <url>/2023/01/23/fungsi-rtrim-di-php/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Memahami-rtrim-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code"><a href="#Memahami-rtrim-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code" class="headerlink" title="Memahami rtrim() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code"></a>Memahami rtrim() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code</h3><hr><h4> 1. Apa itu rtrim()?</h4><p><span class="label label-default">rtrim()</span> adalah fungsi bawaan PHP yang digunakan untuk menghapus karakter-karakter tertentu dari kanan string. Fungsi ini menerima satu atau lebih karakter yang digunakan sebagai karakter pembatas dan string yang akan diolah.</p><h4> 2. Penggunaan rtrim()</h4><p>rtrim() dapat digunakan untuk menghapus karakter-karakter yang tidak diinginkan dari suatu string seperti whitespace, tab, atau karakter khusus lainnya. Fungsi ini berguna untuk membersihkan string dari karakter yang tidak diinginkan sebelum digunakan dalam proses selanjutnya.</p><h4> 3. Contoh Penggunaan rtrim()</h4><p>Berikut ini adalah beberapa contoh penggunaan rtrim():</p><p>Untuk menghapus whitespace dari kanan string:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;Hello World!    &quot;</span>;<br><span class="hljs-variable">$string</span> = <span class="hljs-title function_ invoke__">rtrim</span>(<span class="hljs-variable">$string</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$string</span>; <br><span class="hljs-comment">// Output: &quot;Hello World!&quot;</span><br></code></pre></td></tr></table></figure><p>Untuk menghapus karakter tab dari kanan string:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;Hello World!\t\t&quot;</span>;<br><span class="hljs-variable">$string</span> = <span class="hljs-title function_ invoke__">rtrim</span>(<span class="hljs-variable">$string</span>, <span class="hljs-string">&quot;\t&quot;</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$string</span>;<br> <span class="hljs-comment">// Output: &quot;Hello World!&quot;</span><br></code></pre></td></tr></table></figure><p>Untuk menghapus karakter spesifik dari kanan string:</p> <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;Hello World!!!!&quot;</span>;<br><span class="hljs-variable">$string</span> = <span class="hljs-title function_ invoke__">rtrim</span>(<span class="hljs-variable">$string</span>, <span class="hljs-string">&quot;!&quot;</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$string</span>; <br><span class="hljs-comment">// Output: &quot;Hello World&quot;</span><br></code></pre></td></tr></table></figure><p>Jika tidak ada karakter pembatas yang ditentukan, maka rtrim() akan menghapus whitespace dari kanan string.</p><div class="note note-info">            <p>fungsi rtrim() yang ada di dalam bahasa pemrograman PHP, yang di gunakan untuk menghapus karakter-karakter tertentu dari kanan string. penggunaan rtrim() yang dapat digunakan untuk menghapus karakter-karakter yang tidak diinginkan dari suatu string seperti <b>whitespace</b></p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>fungsi explode di php memecah string menjadi array</title>
+    <link href="/2023/01/23/fungsi-explode-di-php/"/>
+    <url>/2023/01/23/fungsi-explode-di-php/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Memahami-explode-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code"><a href="#Memahami-explode-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code" class="headerlink" title="Memahami explode() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code"></a>Memahami explode() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code</h3><hr><h4>1.Apa itu explode()?</h4><p>explode() adalah fungsi bawaan PHP yang digunakan untuk memecah string menjadi array berdasarkan pembatas yang ditentukan. Fungsi ini menerima dua parameter: pembatas yang digunakan untuk memecah string dan string yang akan dipisahkan.</p><h4> 2. Penggunaan explode()</h4><p>explode() dapat digunakan untuk berbagai tujuan, seperti memecah alamat email menjadi bagian-bagiannya, memecah string koma-dipisah menjadi array, atau memecah string dengan pembatas tertentu menjadi array.</p><h4>3. Contoh Penggunaan explode()</h4><p>Berikut ini adalah beberapa contoh penggunaan explode() :</p><p>Untuk memecah alamat email menjadi bagian-bagiannya:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$email</span> = <span class="hljs-string">&quot;rendye@example.com&quot;</span>;<br><span class="hljs-variable">$email_parts</span> = <span class="hljs-title function_ invoke__">explode</span>(<span class="hljs-string">&quot;@&quot;</span>, <span class="hljs-variable">$email</span>);<br><span class="hljs-title function_ invoke__">print_r</span>(<span class="hljs-variable">$email_parts</span>); <br><span class="hljs-comment">// Output: Array ( [0] =&gt; &quot;rendye&quot; [1] =&gt; &quot;example.com&quot; )</span><br></code></pre></td></tr></table></figure><p>Untuk memecah string koma-dipisah menjadi array:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;apel,pisang,melon&quot;</span>;<br><span class="hljs-variable">$fruits</span> = <span class="hljs-title function_ invoke__">explode</span>(<span class="hljs-string">&quot;,&quot;</span>, <span class="hljs-variable">$string</span>);<br><span class="hljs-title function_ invoke__">print_r</span>(<span class="hljs-variable">$fruits</span>);<br> <span class="hljs-comment">// Output: Array ( [0] =&gt; &quot;apel&quot; [1] =&gt; &quot;pisang&quot; [2] =&gt; &quot;melon&quot; )</span><br></code></pre></td></tr></table></figure><p>Untuk memecah string dengan pembatas tertentu menjadi array:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$string</span> = <span class="hljs-string">&quot;ren:dye:example.com&quot;</span>;<br><span class="hljs-variable">$parts</span> = <span class="hljs-title function_ invoke__">explode</span>(<span class="hljs-string">&quot;:&quot;</span>, <span class="hljs-variable">$string</span>);<br><span class="hljs-title function_ invoke__">print_r</span>(<span class="hljs-variable">$parts</span>); <br><span class="hljs-comment">// Output: Array ( [0] =&gt; &quot;ren&quot; [1] =&gt; &quot;dye&quot; [2] =&gt; &quot;example.com&quot; )</span><br></code></pre></td></tr></table></figure><div class="note note-info">            <p>Jika pembatas tidak ditemukan dalam string, <span class="label label-default">explode()</span>akan mengembalikan array yang berisi string asli.</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>fungsi substr di php mengambil sebagian dari string</title>
+    <link href="/2023/01/23/fungsi-substr-di-php/"/>
+    <url>/2023/01/23/fungsi-substr-di-php/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Memahami-substr-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code"><a href="#Memahami-substr-dalam-Pemrograman-PHP-Fungsi-Penggunaan-dan-Contoh-Code" class="headerlink" title="Memahami substr() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code"></a>Memahami substr() dalam Pemrograman PHP: Fungsi, Penggunaan, dan Contoh Code</h3><hr><h4>1. Apa itu substr()?</h4><p><span class="label label-default">substr()</span> adalah fungsi bawaan PHP yang digunakan untuk mengambil sebagian dari string. Fungsi ini menerima tiga parameter: string yang akan diambil sebagian, index awal dari string yang diambil, dan jumlah karakter yang akan diambil.</p><h4>2. Penggunaan substr()</h4><p>substr() dapat digunakan untuk berbagai tujuan, seperti mengambil nama depan dari nama lengkap, mengambil sebagian dari alamat email, atau mengambil sebagian dari nomor telepon. </p><h4>3. Contoh Penggunaan substr()</h4><p>Berikut ini adalah beberapa contoh penggunaan substr() :</p><p>Untuk mengambil nama depan dari nama lengkap:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$nama_lengkap</span> = <span class="hljs-string">&quot;ren dye&quot;</span>;<br><span class="hljs-variable">$nama_depan</span> = <span class="hljs-title function_ invoke__">substr</span>(<span class="hljs-variable">$nama_lengkap</span>, <span class="hljs-number">0</span>, <span class="hljs-number">4</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$nama_depan</span>; <span class="hljs-comment">// Output: &quot;ren&quot;</span><br></code></pre></td></tr></table></figure><p>Untuk mengambil domain dari alamat email:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$email</span> = <span class="hljs-string">&quot;rendye@example.com&quot;</span>;<br><span class="hljs-variable">$domain</span> = <span class="hljs-title function_ invoke__">substr</span>(<span class="hljs-variable">$email</span>, <span class="hljs-title function_ invoke__">strpos</span>(<span class="hljs-variable">$email</span>, <span class="hljs-string">&quot;@&quot;</span>) + <span class="hljs-number">1</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$domain</span>; <span class="hljs-comment">// Output: &quot;example.com&quot;</span><br></code></pre></td></tr></table></figure><p>Jika jumlah karakter yang diambil melebihi jumlah karakter pada string, substr() akan mengembalikan seluruh string setelah index awal.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>fungsi</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Fungsi-fungsi Dasar Database MySQLi di PHP</title>
+    <link href="/2023/01/23/Fungsi-fungsi-Dasar-Database-MySQLi-di-PHP/"/>
+    <url>/2023/01/23/Fungsi-fungsi-Dasar-Database-MySQLi-di-PHP/</url>
+    
+    <content type="html"><![CDATA[<p>Dalam pengembangan aplikasi web, database merupakan salah satu komponen yang sangat penting. PHP menyediakan berbagai fungsi untuk mengakses dan mengelola database, di antaranya adalah fungsi mysqli.</p><p> Dalam artikel ini, kita akan membahas beberapa fungsi mysqli yang sering digunakan, seperti <span class="label label-default">mysqli_connect</span>  <span class="label label-default">mysqli_query</span> <span class="label label-default">mysqli_fetch_assoc</span> <span class="label label-default">mysqli_num_rows</span> dan lainnya. Kita juga akan melihat contoh penggunaan kode untuk setiap fungsi.</p><h5 id="1-Fungsi-mysqli-connect"><a href="#1-Fungsi-mysqli-connect" class="headerlink" title="1. Fungsi mysqli_connect"></a>1. Fungsi mysqli_connect</h5><p> digunakan untuk menghubungkan kode PHP dengan database MySQL. Fungsi ini memerlukan 4 parameter yaitu server, username, password, dan nama database. Contoh penggunaannya seperti ini:<br> <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$con</span> = <span class="hljs-title function_ invoke__">mysqli_connect</span>(<span class="hljs-string">&quot;host&quot;</span>, <span class="hljs-string">&quot;username&quot;</span>, <span class="hljs-string">&quot;password&quot;</span>, <span class="hljs-string">&quot;nama_database&quot;</span>);<br></code></pre></td></tr></table></figure></p><h5 id="2-Fungsi-mysqli-query"><a href="#2-Fungsi-mysqli-query" class="headerlink" title="2. Fungsi mysqli_query"></a>2. Fungsi mysqli_query</h5><p> digunakan untuk mengeksekusi perintah SQL. Fungsi ini memerlukan 2 parameter yaitu koneksi dan perintah SQL. Contoh penggunaannya seperti ini:<br> <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$query</span> = <span class="hljs-title function_ invoke__">mysqli_query</span>(<span class="hljs-variable">$con</span>, <span class="hljs-string">&quot;SELECT * FROM tabel_name&quot;</span>);<br></code></pre></td></tr></table></figure></p><h5 id="3-Fungsi-mysqli-fetch-assoc"><a href="#3-Fungsi-mysqli-fetch-assoc" class="headerlink" title="3. Fungsi mysqli_fetch_assoc"></a>3. Fungsi mysqli_fetch_assoc</h5><p>digunakan untuk mengambil data dari hasil eksekusi perintah SQL dan mengembalikan data dalam bentuk array associative. Contoh penggunaannya seperti ini:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-keyword">while</span> (<span class="hljs-variable">$row</span> = <span class="hljs-title function_ invoke__">mysqli_fetch_assoc</span>(<span class="hljs-variable">$query</span>)) &#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$row</span>[<span class="hljs-string">&quot;nama_kolom&quot;</span>];<br>&#125;<br></code></pre></td></tr></table></figure><h5 id="4-Fungsi-mysqli-num-rows"><a href="#4-Fungsi-mysqli-num-rows" class="headerlink" title="4. Fungsi mysqli_num_rows"></a>4. Fungsi mysqli_num_rows</h5><p>digunakan untuk mengetahui jumlah baris hasil dari eksekusi perintah SQL. Contoh penggunaannya seperti ini:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$num_rows</span> = <span class="hljs-title function_ invoke__">mysqli_num_rows</span>(<span class="hljs-variable">$query</span>);<br></code></pre></td></tr></table></figure><h5 id="5-Fungsi-error-reporting"><a href="#5-Fungsi-error-reporting" class="headerlink" title="5. Fungsi error_reporting"></a>5. Fungsi error_reporting</h5><p>digunakan untuk mengontrol level error yang akan ditampilkan. Contoh penggunaannya seperti ini:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-title function_ invoke__">error_reporting</span>(E_ALL);<br></code></pre></td></tr></table></figure><h5 id="6-Fungsi-ini-set"><a href="#6-Fungsi-ini-set" class="headerlink" title="6. Fungsi ini_set"></a>6. Fungsi ini_set</h5><p>digunakan untuk mengubah konfigurasi PHP. Contoh penggunaannya seperti ini:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-title function_ invoke__">ini_set</span>(<span class="hljs-string">&#x27;display_errors&#x27;</span>, <span class="hljs-number">1</span>);<br></code></pre></td></tr></table></figure><h5 id="7-Fungsi-mysqli-fetch-array"><a href="#7-Fungsi-mysqli-fetch-array" class="headerlink" title="7. Fungsi mysqli_fetch_array"></a>7. Fungsi mysqli_fetch_array</h5><p> digunakan untuk mengambil data dari hasil eksekusi perintah SQL dan mengembalikan data dalam bentuk array. Contoh penggunaannya seperti ini:<br> <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-keyword">while</span> (<span class="hljs-variable">$row</span> = <span class="hljs-title function_ invoke__">mysqli_fetch_array</span>(<span class="hljs-variable">$query</span>)) &#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$row</span>[<span class="hljs-string">&quot;nama_kolom&quot;</span>];<br>&#125;<br></code></pre></td></tr></table></figure></p><h5 id="8-Fungsi-mysqli-close"><a href="#8-Fungsi-mysqli-close" class="headerlink" title="8. Fungsi mysqli_close"></a>8. Fungsi mysqli_close</h5><p>digunakan untuk menutup koneksi dengan database. Contoh penggunaannya seperti ini:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-title function_ invoke__">mysqli_close</span>(<span class="hljs-variable">$con</span>);<br></code></pre></td></tr></table></figure><p>Itu dia beberapa fungsi database yang sering digunakan dalam pemrograman PHP. Dari fungsi-fungsi tersebut, Anda dapat membuat aplikasi yang dapat berinteraksi dengan database dengan mudah. </p><div class="note note-warning">            <p>Namun ingat, selalu pastikan kode yang Anda buat aman dari serangan SQL injection dengan menggunakan prepared statement atau sanitasi input yang baik.</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>komputer</category>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>fungsi</category>
+      
+      <category>IT</category>
+      
+      <category>Pemrograman</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+      <tag>sql</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Manipulasi JSON di PHP</title>
+    <link href="/2023/01/23/Manipulasi-JSON-di-PHP/"/>
+    <url>/2023/01/23/Manipulasi-JSON-di-PHP/</url>
+    
+    <content type="html"><![CDATA[<p><b>JSON (JavaScript Object Notation) adalah format data yang digunakan untuk pertukaran data antara aplikasi.</b> Ini mirip dengan array associative di PHP, di mana Anda dapat menyimpan key-value pairs.</p><div class="note note-info">            <p>Dalam artikel ini, kita akan membahas beberapa fungsi yang digunakan untuk memanipulasi data JSON di PHP.</p>          </div><ol><li>file_get_contents<br> Fungsi <span class="label label-default">file_get_contents()</span> digunakan untuk membaca file dan mengembalikan isinya dalam bentuk string. Anda dapat menggunakan fungsi ini untuk membaca file JSON dan menyimpannya dalam variabel. <br> Contohnya: <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-comment">// Membaca file json</span><br><span class="hljs-variable">$json</span> = <span class="hljs-title function_ invoke__">file_get_contents</span>(<span class="hljs-string">&#x27;data.json&#x27;</span>);<br><br><span class="hljs-comment">// Mengubah json menjadi array</span><br><span class="hljs-variable">$data</span> = <span class="hljs-title function_ invoke__">json_decode</span>(<span class="hljs-variable">$json</span>, <span class="hljs-literal">true</span>);<br><br><span class="hljs-comment">// Menampilkan data dari array</span><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$data</span>[<span class="hljs-string">&#x27;nama&#x27;</span>]; <span class="hljs-comment">// Output: ren dye</span><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$data</span>[<span class="hljs-string">&#x27;usia&#x27;</span>]; <span class="hljs-comment">// Output: 17</span><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$data</span>[<span class="hljs-string">&#x27;pekerjaan&#x27;</span>]; <span class="hljs-comment">//Output: Developer</span><br></code></pre></td></tr></table></figure><span class="label label-info">data.json</span><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;nama&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;ren dye&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;usia&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">17</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;pekerjaan&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Developer&quot;</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure></li><li>json_decode<br> Fungsi <span class="label label-default">json_decode()</span> digunakan untuk mengubah string JSON menjadi array associative di PHP. Anda dapat menggunakan fungsi ini setelah menggunakan <span class="label label-default">file_get_contents()</span> untuk membaca file JSON. <br>Contohnya: <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-comment">// Membuat array</span><br><span class="hljs-comment">// Membuat array</span><br><span class="hljs-variable">$data</span> = <span class="hljs-keyword">array</span>(<br>    <span class="hljs-string">&quot;nama&quot;</span> =&gt; <span class="hljs-string">&quot;ren dye&quot;</span>,<br>    <span class="hljs-string">&quot;usia&quot;</span> =&gt; <span class="hljs-number">17</span>,<br>    <span class="hljs-string">&quot;pekerjaan&quot;</span> =&gt; <span class="hljs-string">&quot;Developer&quot;</span><br>);<br><br><span class="hljs-comment">// Mengubah array menjadi json</span><br><span class="hljs-variable">$json</span> = <span class="hljs-title function_ invoke__">json_encode</span>(<span class="hljs-variable">$data</span>);<br><br><span class="hljs-comment">// Mengubah json menjadi array</span><br><span class="hljs-variable">$data</span> = <span class="hljs-title function_ invoke__">json_decode</span>(<span class="hljs-variable">$json</span>, <span class="hljs-literal">true</span>);<br><br><span class="hljs-comment">// Menampilkan data dari array</span><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$data</span>[<span class="hljs-string">&#x27;nama&#x27;</span>]; <span class="hljs-comment">// Output: ren dye</span><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$data</span>[<span class="hljs-string">&#x27;usia&#x27;</span>]; <span class="hljs-comment">// Output: 17</span><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$data</span>[<span class="hljs-string">&#x27;pekerjaan&#x27;</span>]; <span class="hljs-comment">// Output: Developer</span><br><br></code></pre></td></tr></table></figure></li><li>json_encode<br> Fungsi <span class="label label-default">json_encode()</span> digunakan untuk mengubah array associative di PHP menjadi string JSON. Anda dapat menggunakan fungsi ini untuk mengubah data PHP menjadi format yang dapat dibaca oleh aplikasi lain. <br> Contohnya: <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-comment">// Membuat array</span><br><span class="hljs-variable">$data</span> = <span class="hljs-keyword">array</span>(<br>    <span class="hljs-string">&quot;nama&quot;</span> =&gt; <span class="hljs-string">&quot;ren dye&quot;</span>,<br>    <span class="hljs-string">&quot;usia&quot;</span> =&gt; <span class="hljs-number">17</span>,<br>    <span class="hljs-string">&quot;pekerjaan&quot;</span> =&gt; <span class="hljs-string">&quot;Developer&quot;</span><br>);<br><br><span class="hljs-comment">// Mengubah array menjadi json</span><br><span class="hljs-variable">$json</span> = <span class="hljs-title function_ invoke__">json_encode</span>(<span class="hljs-variable">$data</span>);<br><br><span class="hljs-comment">// Menampilkan json</span><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$json</span>;<br><span class="hljs-comment">// Output: &#123;&quot;nama&quot;:&quot;ren dye&quot;,&quot;usia&quot;:17,&quot;pekerjaan&quot;:&quot;Developer&quot;&#125;</span><br></code></pre></td></tr></table></figure></li><li>file_put_contents<br> Fungsi <span class="label label-default">file_put_contents()</span> digunakan untuk menulis string ke file. Anda dapat menggunakan fungsi ini untuk menyimpan data JSON yang telah diubah ke dalam file. <br> Contohnya: <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$data</span> = <span class="hljs-keyword">array</span>(<br>    <span class="hljs-string">&quot;nama&quot;</span> =&gt; <span class="hljs-string">&quot;ren dye&quot;</span>,<br>    <span class="hljs-string">&quot;usia&quot;</span> =&gt; <span class="hljs-number">17</span><br>);<br><br><span class="hljs-comment">// Mengubah data array menjadi json</span><br><span class="hljs-variable">$json</span> = <span class="hljs-title function_ invoke__">json_encode</span>(<span class="hljs-variable">$data</span>);<br><br><span class="hljs-comment">// Menyimpan json ke dalam file</span><br><span class="hljs-title function_ invoke__">file_put_contents</span>(<span class="hljs-string">&#x27;data.json&#x27;</span>, <span class="hljs-variable">$json</span>);<br><br></code></pre></td></tr></table></figure></li><li>json_last_error<br> Fungsi <span class="label label-default">json_last_error()</span> digunakan untuk mendapatkan informasi error saat mengubah string JSON menjadi array associative atau sebaliknya dengan menggunakan <span class="label label-default">json_decode</span>  atau <span class="label label-default">json_encode</span><br> <br>Contohnya. <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$json</span> = <span class="hljs-string">&#x27;&#123;&quot;nama&quot;: &quot;ren dye&quot;, &quot;usia&quot;: 17&#125;&#x27;</span>;<br><br><span class="hljs-comment">// Mencoba mengubah json menjadi array</span><br><span class="hljs-variable">$data</span> = <span class="hljs-title function_ invoke__">json_decode</span>(<span class="hljs-variable">$json</span>, <span class="hljs-literal">true</span>);<br><br><span class="hljs-comment">// Cek apakah ada kesalahan</span><br><span class="hljs-keyword">if</span> (<span class="hljs-title function_ invoke__">json_last_error</span>() !== JSON_ERROR_NONE) &#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&#x27;Error: &#x27;</span> . <span class="hljs-title function_ invoke__">json_last_error_msg</span>();<br>&#125; <span class="hljs-keyword">else</span> &#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&#x27;Data: &#x27;</span> . <span class="hljs-title function_ invoke__">print_r</span>(<span class="hljs-variable">$data</span>, <span class="hljs-literal">true</span>);<br>&#125;<br></code></pre></td></tr></table></figure>Pada contoh di atas, kita mencoba mengubah data JSON menjadi array dengan menggunakan json_decode(). Kemudian, kita cek apakah ada kesalahan dengan menggunakan json_last_error(). Jika tidak ada kesalahan, kita tampilkan data array. Namun jika terjadi kesalahan, kita tampilkan pesan kesalahannya dengan menggunakan json_last_error_msg().</li></ol><p> Itulah beberapa fungsi yang dapat digunakan untuk memanipulasi data JSON di PHP.</p><div class="note note-warning">            <p>Ingatlah untuk selalu memvalidasi data sebelum menggunakannya dan menangani kesalahan yang mungkin terjadi.</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>komputer</category>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>web server</category>
+      
+      <category>database</category>
+      
+      <category>IT</category>
+      
+      <category>Pemrograman</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>programmer</tag>
+      
+      <tag>php</tag>
+      
+      <tag>json</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Pengenalan Vue.js dan Kelebihannya dalam Pembuatan Aplikasi Web</title>
     <link href="/2023/01/21/Pengenalan-Vue-js-dan-Kelebihannya-dalam-Pembuatan-Aplikasi-Web/"/>
     <url>/2023/01/21/Pengenalan-Vue-js-dan-Kelebihannya-dalam-Pembuatan-Aplikasi-Web/</url>
