@@ -4,6 +4,49 @@
   
   
   <entry>
+    <title>menjumlahkan total data di tabel SQL syarat nilai yang sama tidak ikut dijumlahkan</title>
+    <link href="/2023/01/28/menjumlahkan-total-data-di-tabel-SQL-syarat-nilai-yang-sama-tidak-ikut-dijumlahkan/"/>
+    <url>/2023/01/28/menjumlahkan-total-data-di-tabel-SQL-syarat-nilai-yang-sama-tidak-ikut-dijumlahkan/</url>
+    
+    <content type="html"><![CDATA[<h3 id="cara-menjumlahkan-total-data-di-tabel-SQL-syarat-nilai-yang-sama-tidak-ikut-dijumlahkan"><a href="#cara-menjumlahkan-total-data-di-tabel-SQL-syarat-nilai-yang-sama-tidak-ikut-dijumlahkan" class="headerlink" title="cara menjumlahkan total data di tabel SQL syarat nilai yang sama tidak ikut dijumlahkan"></a>cara menjumlahkan total data di tabel SQL syarat nilai yang sama tidak ikut dijumlahkan</h3><p>Untuk menjumlahkan total tags di tabel SQL dengan syarat bahwa nilai yang sama tidak ikut dijumlahkan, Anda dapat menggunakan perintah <span class="label label-default">COUNT</span> bersama dengan <span class="label label-default">DISTINCT</span> seperti ini:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php">SELECT <span class="hljs-title function_ invoke__">COUNT</span>(DISTINCT tag) FROM nama_tabel;<br></code></pre></td></tr></table></figure><p>Ini akan menghitung jumlah tag yang unik di tabel, mengabaikan tag yang sama yang mungkin muncul lebih dari satu kali. Misalnya, jika tabel Anda memiliki kolom tag dengan data seperti ini:</p><table style="border-radius:4px"><thead><tr><th width="400px" style="background:grey; text-align: center;">tags</th></tr></thead><tbody><tr><td>html</td></tr><tr><td>css</td></tr><tr><td>html</td></tr><tr><td>js</td></tr></tbody></table><p>Maka perintah di atas akan menghasilkan jumlah 3, karena hanya ada 3 tag yang unik (html, css, dan js).</p><p>Jika Anda ingin menjumlahkan tags yang sama juga, Anda dapat menggunakan perintah  <span class="label label-default">COUNT</span> tanpa  <span class="label label-warning">DISTINCT</span> seperti ini:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php">SELECT <span class="hljs-title function_ invoke__">COUNT</span>(tag) FROM nama_tabel;<br></code></pre></td></tr></table></figure><p>Ini akan menghitung seluruh tags di tabel, termasuk tag yang sama yang mungkin muncul lebih dari satu kali. Misalnya, jika tabel Anda memiliki kolom tag dengan data seperti di atas, maka perintah di atas akan menghasilkan jumlah 4, karena ada 4 tag di tabel (termasuk dua tags html yang sama).</p><p>script lengkap seperti ini:<br>tabel SQL: <span class="label label-info">artikel</span></p><table><thead><tr><th align="right">id</th><th align="center">judul</th><th>tags</th></tr></thead><tbody><tr><td align="right">1</td><td align="center">belajar html part1</td><td>html</td></tr><tr><td align="right">2</td><td align="center">belajar html part2</td><td>html</td></tr><tr><td align="right">3</td><td align="center">belajar html part3</td><td>html</td></tr><tr><td align="right">4</td><td align="center">belajar css part1</td><td>css</td></tr><tr><td align="right">5</td><td align="center">belajar css part2</td><td>css</td></tr><tr><td align="right">6</td><td align="center">belajar css part3</td><td>css</td></tr><tr><td align="right">7</td><td align="center">belajar Javascript  part1</td><td>js</td></tr><tr><td align="right">8</td><td align="center">belajar Javascript  part2</td><td>js</td></tr><tr><td align="right">9</td><td align="center">belajar Javascript  part3</td><td>js</td></tr></tbody></table><a class="btn" href="/img/img/artikel.sql"  title="artikel.sql" target="_blank">download</a><p>file php: <span class="label label-info">tags.php</span></p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$connect</span> = <span class="hljs-title function_ invoke__">mysqli_connect</span>(<span class="hljs-string">&quot;localhost&quot;</span>, <span class="hljs-string">&quot;root&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;db_artikel&quot;</span>);<br><br><span class="hljs-comment">// dengan DISTINCT</span><br><span class="hljs-variable">$result_tags</span> = <span class="hljs-title function_ invoke__">mysqli_query</span>(<span class="hljs-variable">$connect</span>,<span class="hljs-string">&quot;SELECT COUNT(DISTINCT tags) As total_tags FROM `artikel`&quot;</span>);<br><span class="hljs-variable">$total</span> = <span class="hljs-title function_ invoke__">mysqli_fetch_array</span>(<span class="hljs-variable">$result_tags</span>);<br><span class="hljs-variable">$total_tags</span> = <span class="hljs-variable">$total</span>[<span class="hljs-string">&#x27;total_tags&#x27;</span>];<br><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$total_tags</span>; <br><span class="hljs-comment">/* Output 3*/</span><br><br><span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;br&gt;&quot;</span>;<br><span class="hljs-comment">// tanpa DISTINCT</span><br><span class="hljs-variable">$result_tags1</span> = <span class="hljs-title function_ invoke__">mysqli_query</span>(<span class="hljs-variable">$connect</span>,<span class="hljs-string">&quot;SELECT COUNT(tags) As total_tags1 FROM `artikel`&quot;</span>);<br><span class="hljs-variable">$total1</span> = <span class="hljs-title function_ invoke__">mysqli_fetch_array</span>(<span class="hljs-variable">$result_tags1</span>);<br><span class="hljs-variable">$total_tags1</span> = <span class="hljs-variable">$total1</span>[<span class="hljs-string">&#x27;total_tags1&#x27;</span>];<br><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$total_tags1</span>; <br><span class="hljs-comment">/* Output 9 */</span><br><span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;br&gt;&quot;</span>;<br><br><span class="hljs-variable">$sql</span> = <span class="hljs-string">&quot;SELECT DISTINCT tags FROM artikel&quot;</span>;<br>        <span class="hljs-variable">$row</span> = <span class="hljs-title function_ invoke__">mysqli_query</span>(<span class="hljs-variable">$connect</span>, <span class="hljs-variable">$sql</span>);<br><span class="hljs-variable">$total_data</span> = <span class="hljs-title function_ invoke__">mysqli_num_rows</span>(<span class="hljs-variable">$row</span>); <span class="hljs-comment">//menghitung jumlah baris yang dikembalikan oleh query</span><br>        <span class="hljs-variable">$counter</span> = <span class="hljs-number">1</span>; <span class="hljs-comment">//banyak data yang telah dikeluarkan.</span><br><span class="hljs-keyword">while</span> (<span class="hljs-variable">$data</span> = <span class="hljs-title function_ invoke__">mysqli_fetch_array</span>(<span class="hljs-variable">$row</span>)) &#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$data</span>[<span class="hljs-string">&#x27;tags&#x27;</span>];<br>    <span class="hljs-keyword">if</span>(<span class="hljs-variable">$counter</span> &lt; <span class="hljs-variable">$total_data</span>)&#123;<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;,&quot;</span>; <br>        <span class="hljs-comment">//Jika $counter lebih kecil dari $total_data, maka koma akan ditambahkan pada akhir nilai yang dikembalikan</span><br>        <span class="hljs-comment">// Jika $counter sama dengan $total_data, maka koma tidak akan ditambahkan pada akhir nilai yang dikembalikan.</span><br>    &#125;<br>    <span class="hljs-variable">$counter</span>++; <br>&#125;<br>        <span class="hljs-comment">/* Output html,css,js */</span><br></code></pre></td></tr></table></figure><p>semoga membantu, jika ada pertanyaan bisa komen di bawah </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>web dev</category>
+      
+      <category>back end</category>
+      
+      <category>komputer</category>
+      
+      <category>Teknologi</category>
+      
+      <category>IT</category>
+      
+      <category>Pemrograman</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>teknologi</tag>
+      
+      <tag>informasi</tag>
+      
+      <tag>php</tag>
+      
+      <tag>sql</tag>
+      
+      <tag>programmer</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Manfaat Menjadi Programmer di Usia Muda</title>
     <link href="/2023/01/28/Manfaat-Menjadi-Programmer-di-Usia-Muda/"/>
     <url>/2023/01/28/Manfaat-Menjadi-Programmer-di-Usia-Muda/</url>

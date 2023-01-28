@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blogworlds.github.io/2023/01/28/Manfaat-Menjadi-Programmer-di-Usia-Muda/</loc>
+    <loc>https://blogworlds.github.io/2023/01/28/menjumlahkan-total-data-di-tabel-SQL-syarat-nilai-yang-sama-tidak-ikut-dijumlahkan/</loc>
     
     <lastmod>2023-01-28</lastmod>
     
@@ -12,6 +12,15 @@
   
   <url>
     <loc>https://blogworlds.github.io/2023/01/27/Perkembangan-Bahasa-Pemrograman-di-Era-Digital/</loc>
+    
+    <lastmod>2023-01-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogworlds.github.io/2023/01/28/Manfaat-Menjadi-Programmer-di-Usia-Muda/</loc>
     
     <lastmod>2023-01-28</lastmod>
     
