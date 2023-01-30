@@ -27,7 +27,7 @@
 <meta property="og:locale" content="id_ID">
 <meta property="og:image" content="https://blogworlds.github.io/img/5-tag-php.png">
 <meta property="article:published_time" content="2023-01-23T06:29:36.000Z">
-<meta property="article:modified_time" content="2023-01-24T02:55:23.373Z">
+<meta property="article:modified_time" content="2023-01-30T01:11:38.744Z">
 <meta property="article:author" content="hamzahxou">
 <meta property="article:tag" content="php">
 <meta property="article:tag" content="programmer">
@@ -234,6 +234,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span>privacy</span>
                   </a>
                 
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/Tools/">
+                    
+                    <span>Tools</span>
+                  </a>
+                
               </div>
             </li>
           
@@ -346,19 +354,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 <h3 id="5-Tag-PHP-yang-Jarang-Diketahui-Namun-Sangat-Bermanfaat"><a href="#5-Tag-PHP-yang-Jarang-Diketahui-Namun-Sangat-Bermanfaat" class="headerlink" title="5 Tag PHP yang Jarang Diketahui Namun Sangat Bermanfaat"></a>5 Tag PHP yang Jarang Diketahui Namun Sangat Bermanfaat</h3><hr>
 <h4>1. header()</h4>
-<p>tag header() digunakan untuk mengirim header HTTP ke browser. Ini bisa digunakan untuk mengatur waktu kadaluwarsa cache, atau untuk melakukan redirect ke halaman lain. Contohnya:</p>
+<p>tag <span class="label label-info">header()</span> digunakan untuk mengirim header HTTP ke browser. Ini bisa digunakan untuk mengatur waktu kadaluwarsa cache, atau untuk melakukan redirect ke halaman lain. Contohnya:</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-title function_ invoke__">header</span>(<span class="hljs-string">&quot;Location: http://example.com&quot;</span>); <span class="hljs-comment">// Redirect ke halaman example.com</span><br><span class="hljs-title function_ invoke__">header</span>(<span class="hljs-string">&quot;Expires: Mon, 26 Jul 1997 05:00:00 GMT&quot;</span>); <span class="hljs-comment">// Set waktu kadaluwarsa cache</span><br></code></pre></td></tr></table></figure>
 <h4>2. get_meta_tags()</h4>
-<p>tag get_meta_tags() digunakan untuk mengambil meta tag dari suatu halaman web. Ini bisa digunakan untuk mengambil informasi seperti judul, deskripsi, atau kata kunci dari halaman lain. Contohnya:</p>
+<p>tag <span class="label label-info">get_meta_tags()</span> digunakan untuk mengambil meta tag dari suatu halaman web. Ini bisa digunakan untuk mengambil informasi seperti judul, deskripsi, atau kata kunci dari halaman lain. Contohnya:</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$tags</span> = <span class="hljs-title function_ invoke__">get_meta_tags</span>(<span class="hljs-string">&#x27;http://blogworlds.github.io&#x27;</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$tags</span>[<span class="hljs-string">&#x27;author&#x27;</span>];<br></code></pre></td></tr></table></figure>
 <h4>3. call_user_func()</h4>
-<p>tag call_user_func() digunakan untuk memanggil suatu fungsi dengan parameter yang ditentukan. Ini bisa digunakan untuk memanggil fungsi yang ditentukan dalam variabel atau untuk memanggil fungsi dalam array. Contohnya:</p>
+<p>tag <span class="label label-info">call_user_func()</span> digunakan untuk memanggil suatu fungsi dengan parameter yang ditentukan. Ini bisa digunakan untuk memanggil fungsi yang ditentukan dalam variabel atau untuk memanggil fungsi dalam array. Contohnya:</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$function</span> = <span class="hljs-string">&#x27;strtoupper&#x27;</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-title function_ invoke__">call_user_func</span>(<span class="hljs-variable">$function</span>, <span class="hljs-string">&#x27;hello world&#x27;</span>); <span class="hljs-comment">// Menampilkan &quot;HELLO WORLD&quot;</span><br></code></pre></td></tr></table></figure>
 <h4>4. array_reduce()</h4>
-<p>tag array_reduce() digunakan untuk mengurangi array menjadi satu nilai dengan menjalankan fungsi yang ditentukan. Ini bisa digunakan untuk menjumlahkan semua nilai dalam array atau untuk mencari nilai maksimum dari array. Contohnya:</p>
+<p>tag <span class="label label-info">array_reduce()</span> digunakan untuk mengurangi array menjadi satu nilai dengan menjalankan fungsi yang ditentukan. Ini bisa digunakan untuk menjumlahkan semua nilai dalam array atau untuk mencari nilai maksimum dari array. Contohnya:</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$numbers</span> = <span class="hljs-keyword">array</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);<br><span class="hljs-variable">$sum</span> = <span class="hljs-title function_ invoke__">array_reduce</span>(<span class="hljs-variable">$numbers</span>, function(<span class="hljs-variable">$carry</span>, <span class="hljs-variable">$item</span>) &#123;<br>  <span class="hljs-keyword">return</span> <span class="hljs-variable">$carry</span>+<span class="hljs-variable">$item</span>;<br>&#125;);<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$sum</span>; <span class="hljs-comment">// Menampilkan 15</span><br></code></pre></td></tr></table></figure>
 <h4>5. array_filter()</h4>
-<p>tag array_filter() digunakan untuk menyaring elemen-elemen dari array yang memenuhi kondisi yang ditentukan. Ini bisa digunakan untuk menyaring array berdasarkan nilai atau untuk menghapus elemen-elemen yang kosong. Contohnya:</p>
+<p>tag <span class="label label-info">array_filter()</span> digunakan untuk menyaring elemen-elemen dari array yang memenuhi kondisi yang ditentukan. Ini bisa digunakan untuk menyaring array berdasarkan nilai atau untuk menghapus elemen-elemen yang kosong. Contohnya:</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$numbers</span> = <span class="hljs-keyword">array</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);<br><span class="hljs-variable">$even_numbers</span> = <span class="hljs-title function_ invoke__">array_filter</span>(<span class="hljs-variable">$numbers</span>, function(<span class="hljs-variable">$item</span>) &#123;<br>  <span class="hljs-keyword">return</span> <span class="hljs-variable">$item</span> % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>;<br>&#125;);<br><span class="hljs-title function_ invoke__">print_r</span>(<span class="hljs-variable">$even_numbers</span>); <span class="hljs-comment">// Menampilkan array(2, 4)</span><br></code></pre></td></tr></table></figure>
 Itulah beberapa tag PHP yang jarang diketahui namun sangat bermanfaat dalam pengembangan aplikasi. Selain itu, pastikan untuk selalu mempelajari dokumentasi dan referensi dari PHP untuk menemukan fitur-fitur baru yang dapat membantu Anda dalam pengembangan aplikasi.
 
