@@ -2101,3 +2101,21 @@ input[type=checkbox] {
     margin-left: 1rem;
   }
 }
+.News {
+  color: #e13b3b;
+  font-family: Sans-Serif;
+  font-size: smaller;
+  position: relative;
+  top: -5px;
+}
+.hots {
+  color: #00f;
+  font-family: Sans-Serif;
+  font-size: smaller;
+  position: relative;
+  top: -5px;
+}
+.demo-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
