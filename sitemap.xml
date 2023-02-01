@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blogworlds.github.io/2023/01/23/3-Tag-PHP-yang-Jarang-Diketahui-Namun-Sangat-Bermanfaat/</loc>
+    <loc>https://blogworlds.github.io/2023/01/16/belajar-php-part3/</loc>
     
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogworlds.github.io/2023/01/15/belajar-html-part3/</loc>
+    
+    <lastmod>2023-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogworlds.github.io/2023/02/01/Belajar-Dasar-dasar-Pemrograman-untuk-Pemula/</loc>
+    
+    <lastmod>2023-02-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -12,6 +30,15 @@
   
   <url>
     <loc>https://blogworlds.github.io/2023/01/31/Apa-itu-Programmer/</loc>
+    
+    <lastmod>2023-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogworlds.github.io/2023/01/23/3-Tag-PHP-yang-Jarang-Diketahui-Namun-Sangat-Bermanfaat/</loc>
     
     <lastmod>2023-01-31</lastmod>
     
@@ -75,15 +102,6 @@
   
   <url>
     <loc>https://blogworlds.github.io/Tools/panduan.html</loc>
-    
-    <lastmod>2023-01-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogworlds.github.io/contact/index.html</loc>
     
     <lastmod>2023-01-30</lastmod>
     
@@ -389,15 +407,6 @@
   </url>
   
   <url>
-    <loc>https://blogworlds.github.io/2023/01/16/belajar-php-part3/</loc>
-    
-    <lastmod>2023-01-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blogworlds.github.io/2023/01/16/belajar-php-part1/</loc>
     
     <lastmod>2023-01-16</lastmod>
@@ -410,15 +419,6 @@
     <loc>https://blogworlds.github.io/2023/01/16/belajar-php-part2/</loc>
     
     <lastmod>2023-01-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogworlds.github.io/2023/01/15/belajar-html-part3/</loc>
-    
-    <lastmod>2023-01-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -499,7 +499,7 @@
 
   <url>
     <loc>https://blogworlds.github.io/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -507,161 +507,161 @@
   
   <url>
     <loc>https://blogworlds.github.io/tags/html/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/css/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/javascript/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/teknologi/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/informasi/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/php/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/sql/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/hexo/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/programmer/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/produktivitas/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/kesehatan/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/Emosi/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/Cloud-computing/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/Scalability/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/Aksesibilitas/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/Optimisasi/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/Infrastruktur/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/AI/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/Management/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/Blockchain/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/SEO/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/Machine-Learning/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/tags/json/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -670,147 +670,147 @@
   
   <url>
     <loc>https://blogworlds.github.io/categories/front-end/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/web-dev/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/back-end/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/web-server/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/database/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/nodejs/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/nodejs/npm/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/terminal/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/tutorial/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/komputer/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/kerja/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/fungsi/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/Psikologi/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/Tips-hidup-sehat/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/Teknologi/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/Cloud/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/IT/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/Inovasi/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/Cryptocurrency/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/karir/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blogworlds.github.io/categories/Pemrograman/</loc>
-    <lastmod>2023-01-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
