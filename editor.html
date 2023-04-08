@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://blogworlds.github.io/img/hx.png">
+  <link rel="icon" href="https://blogworlds.github.io/img/favicon.ico">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="hamzahxou">
+  <meta name="keywords" content="editor, blog, teknologi, blogging, tips, tutorial, informatif, Hamzahxou.">
+  
+    <meta name="description" content="editor">
+<meta property="og:type" content="tools">
+<meta property="og:title" content="Manfaat Menjadi Programmer di Usia Muda">
+<meta property="og:url" content="https://blogworlds.github.io/">
+<meta property="og:site_name" content="blogworlds">
+<meta property="og:description" content="editor">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://blogworlds.github.io/blogworlds.png">
+
+
+  
+    <title>editor</title>
+
+
+<style type="text/css" media="all">
+  /* rules for mobile devices */
+  @media screen and (max-width: 480px) {
+
+  }
+body {
+  background: #05001f;
+  color: white;
+  font-family: Monospace;
+}
+  /* style for the circle */
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+   /* margin-right: 1px;*/
+  }
+
+  /* style for the red circle */
+  .circle.red {
+    background-color: #ff5c5c;
+  }
+
+  /* style for the yellow circle */
+  .circle.yellow {
+    background-color: #f5d033;
+  }
+
+  /* style for the green circle */
+  .circle.green {
+    background-color: #48c96c;
+  }
+  .headerscon {
+    position: absolute;
+    border-radius: 5px 5px 0 0;
+     width: 364px;
+    top: -0.1px;
+    height: 25px;
+    background-color:  #606060;
+    box-shadow: 0 2px 9px #545454;
+  }
+    .headers {
+       top: -5px;
+       margin: -4px;
+  }
+  /* style for the icons */
+  .header-icon {
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    z-index: 1;
+  }
+  
+
+  .icon-x {
+    display: flex;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+  }
+  /* style for the textarea */
+  textarea {
+    font-family: monospace;
+    background: #606060;
+    color: white;
+    font-weight: bold;
+    padding: 30px 10px 10px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    resize: none;
+    height: auto;
+    width: auto;
+    font-size: 14px;
+  }
+
+
+  /* style for the highlight effect */
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  #popupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+  backdrop-filter: blur(1px); /* menambahkan efek blur */
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.container {
+  position: relative;
+  /*width: 100%;
+  height: 100%;*/
+}
+.content {
+  height: calc(100% - 30px);
+}
+
+.header {
+  padding: 5px;
+  background-color: #ddd;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+#closeButton {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+#nButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+#result {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.button {
+  margin: 10;
+  background-color: #007aff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #0062cc;
+}
+
+.button:active {
+  background-color: #0052ac;
+  box-shadow: none;
+}
+input[type="checkbox"] {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #ddd;
+  box-shadow: 3px 3px 1px #313131;
+  transition: background-color 0.5s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #8f8f8f;
+  box-shadow: 3px 3px 1px #313131;
+}
+
+input[type="checkbox"]::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 9px;
+  transform: translate(-50%, -50%) scale(0);
+  box-shadow: 1px 1px 9px #313131;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+fieldset {
+  background: #535353;
+  border: none;
+  box-shadow: 6px 6px 1px #313131;
+  width: 250px;
+}
+legend {
+  background: #535353;
+  border: none;
+  box-shadow: 5px 5px 1px #313131;
+  width: 150px;
+  height: 20px;
+  padding: 7px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  
+
+}
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin: -8px;
+}
+
+/*  -webkit-text-stroke: 1px black;*/
+
+</style>
+</head>
+<body onload="playAudio()">
+<div class="content">
+<div class="container">
+  <div class="headerscon">
+  <div class="header-icon">
+    <div class="circle red"></div>
+    <div class="circle yellow"></div>
+    <div class="circle green"></div>
+  </div>
+  
+  <button class="headers notification" id="nButton" onclick="openPopup()"><span style="font-size:20px"><img height="20px" width="20px" src="https://icon-library.com/images/build-icon-png/build-icon-png-6.jpg" alt="" /></span></button>
+  </div>
+  <textarea class="my-textarea" cols="40" rows="10" id="TextEditor" placeholder="">&lt;html&gt;
+ &lt;head&gt;
+   &lt;title&gt;halo&lt;/title&gt;
+ &lt;/head&gt;
+  &lt;body&gt;
+   &lt;p&gt;halo broh&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</textarea>
+</div>
+<p>Total kata: <span id="wordCount">0</span></p>
+<p>Total huruf: <span id="charCount">0</span></p>
+  <br />
+   <!---  <button class="button notification" id="runButton" onclick="openPopup()">Run</button>-->
+   <button class="button" onclick="downloadText()">download</button>
+    <br />
+    <br />
+    <fieldset>
+    <legend>sound epek</legend>
+<input type="checkbox" id="ketik" class="checkboxs" checked>
+<label>sound ketik</label>
+<br />
+<input type="checkbox" id="delete" class="checkboxs" checked>
+<label>sound delete</label>
+<br />
+<input type="checkbox" id="run" class="checkboxs" checked>
+<label>sound run</label>
+<br />
+<input type="checkbox" id="close" class="checkboxs" checked>
+<label>sound close</label>
+<br />
+<input type="checkbox" id="sound" class="checkboxs">
+<label>sound backsound</label>
+    </fieldset>
+
+<div id="popupContainer">
+  <div class="popup">
+    <div class="header">
+      <div class="circle red"></div>
+      <div class="circle yellow"></div>
+      <div class="circle green"></div>
+      <button class="close" id="closeButton" onclick="closePopup()">&times;</button>
+    </div>
+    <div class="content">
+      <iframe id="result"></iframe>
+    </div>
+  </div>
+</div>
+       
+         
+       </div>
+       </div>
+           <script>
+const _0x40c431=_0x7457;(function(_0x18b5fb,_0x4f2827){const _0x3f3946=_0x7457,_0x1dcc4d=_0x18b5fb();while(!![]){try{const _0x5ae670=-parseInt(_0x3f3946(0x204))/0x1+parseInt(_0x3f3946(0x218))/0x2+-parseInt(_0x3f3946(0x20e))/0x3+parseInt(_0x3f3946(0x1fe))/0x4+-parseInt(_0x3f3946(0x1e5))/0x5+-parseInt(_0x3f3946(0x1f8))/0x6+parseInt(_0x3f3946(0x1f0))/0x7;if(_0x5ae670===_0x4f2827)break;else _0x1dcc4d['push'](_0x1dcc4d['shift']());}catch(_0x30c6ee){_0x1dcc4d['push'](_0x1dcc4d['shift']());}}}(_0x11d2,0xddfec));const url=window[_0x40c431(0x211)][_0x40c431(0x1ff)],blogName=url['split']('.')[0x0];function _0x7457(_0x2aa37d,_0x47c7e4){const _0x11d236=_0x11d2();return _0x7457=function(_0x7457fb,_0x19835f){_0x7457fb=_0x7457fb-0x1d8;let _0x475c30=_0x11d236[_0x7457fb];return _0x475c30;},_0x7457(_0x2aa37d,_0x47c7e4);}if(_0x40c431(0x1fb)==blogName){function openPopup(){const _0x17f758=_0x40c431;var _0x3bd945=document[_0x17f758(0x1db)](_0x17f758(0x20c)),_0x1f3ed1=document[_0x17f758(0x1db)](_0x17f758(0x205)),_0x126a02=document[_0x17f758(0x1db)](_0x17f758(0x1e0))[_0x17f758(0x219)];_0x3bd945[_0x17f758(0x1f7)][_0x17f758(0x1ef)]=_0x17f758(0x213),_0x1f3ed1[_0x17f758(0x1e6)]=_0x126a02;}function closePopup(){const _0xffed70=_0x40c431;var _0x4b7544=document[_0xffed70(0x1db)](_0xffed70(0x20c)),_0x4410e5=document['getElementById'](_0xffed70(0x205));_0x4410e5[_0xffed70(0x1e6)]='',_0x4b7544['style'][_0xffed70(0x1ef)]=_0xffed70(0x1f2);}window[_0x40c431(0x20b)](_0x40c431(0x20a),function(_0x5c6445){const _0x1dfa9c=_0x40c431;var _0x2e914f=document[_0x1dfa9c(0x1db)](_0x1dfa9c(0x20c));_0x5c6445[_0x1dfa9c(0x1fc)]==_0x2e914f&&closePopup();});const ketik=document['querySelector'](_0x40c431(0x1f1)),deletes=document[_0x40c431(0x1dd)]('#delete'),run=document['querySelector'](_0x40c431(0x1e9)),closes=document[_0x40c431(0x1dd)]('#close'),sound=document[_0x40c431(0x1db)](_0x40c431(0x1df)),myTextarea=document['querySelector'](_0x40c431(0x1eb));let prevLength=myTextarea['value']['length'];myTextarea['addEventListener'](_0x40c431(0x202),()=>{const _0x424f11=_0x40c431,_0x531d7c=new Audio();myTextarea[_0x424f11(0x219)][_0x424f11(0x217)]<prevLength?deletes['checked']&&(_0x531d7c[_0x424f11(0x20f)]='https://www.myinstants.com/media/sounds/error_CDOxCYm.mp3',_0x531d7c['play']()):ketik[_0x424f11(0x1ec)]&&(_0x531d7c[_0x424f11(0x20f)]=_0x424f11(0x1fa),_0x531d7c[_0x424f11(0x210)]()),_0x531d7c[_0x424f11(0x210)](),prevLength=myTextarea[_0x424f11(0x219)][_0x424f11(0x217)];});const buttons=document['querySelectorAll'](_0x40c431(0x1e3));buttons[_0x40c431(0x1ee)](_0x1596ee=>{const _0x552c97=_0x40c431;_0x1596ee[_0x552c97(0x20b)](_0x552c97(0x20a),()=>{const _0x144de2=_0x552c97;if(run['checked']){const _0x3d05ab=new Audio('https://www.myinstants.com/media/sounds/discord-notification.mp3');_0x3d05ab[_0x144de2(0x210)]();}});});const audio=new Audio('https://www.myinstants.com/media/sounds/vlc-record-2019-06-12-15h36m37s-fluffing-a-duck.mp3');audio[_0x40c431(0x214)]=!![],audio[_0x40c431(0x209)]=0.9,sound['addEventListener'](_0x40c431(0x1f3),function(){const _0x39589c=_0x40c431;this['checked']?audio[_0x39589c(0x210)]():audio[_0x39589c(0x201)]();});const close=document['querySelectorAll']('.close');close[_0x40c431(0x1ee)](_0x2877fb=>{const _0x3b2e0d=_0x40c431;_0x2877fb[_0x3b2e0d(0x20b)](_0x3b2e0d(0x20a),()=>{const _0x32b479=_0x3b2e0d;if(closes[_0x32b479(0x1ec)]){const _0x232f2d=new Audio(_0x32b479(0x1e7));_0x232f2d[_0x32b479(0x210)]();}});});const checkboxs=document[_0x40c431(0x208)](_0x40c431(0x1f6));checkboxs[_0x40c431(0x1ee)](_0x526b7e=>{_0x526b7e['addEventListener']('click',()=>{const _0x1fd3a3=_0x7457,_0x53bf1c=new Audio(_0x1fd3a3(0x1dc));_0x53bf1c['play']();});}),window[_0x40c431(0x1e1)]=function(){const _0x7b0452=_0x40c431;var _0x11d080=document[_0x7b0452(0x1db)](_0x7b0452(0x1e0)),_0x514fad=document[_0x7b0452(0x1db)](_0x7b0452(0x1ed)),_0x32b774=document[_0x7b0452(0x1db)](_0x7b0452(0x1de));_0x11d080[_0x7b0452(0x20b)]('input',function(){const _0xfa9ad4=_0x7b0452;var _0x2edf4a=_0x11d080[_0xfa9ad4(0x219)][_0xfa9ad4(0x216)](),_0x315f95=_0x2edf4a[_0xfa9ad4(0x206)](/\s+/),_0x2ae4d1=_0x2edf4a[_0xfa9ad4(0x1e4)](/\s+/g,'');_0x514fad[_0xfa9ad4(0x1da)]=_0x315f95[_0xfa9ad4(0x217)],_0x32b774[_0xfa9ad4(0x1da)]=_0x2ae4d1[_0xfa9ad4(0x217)];});var _0x446b11=_0x11d080[_0x7b0452(0x219)]['trim'](),_0x29cdb4=_0x446b11[_0x7b0452(0x206)](/\s+/),_0x16a322=_0x446b11[_0x7b0452(0x1e4)](/\s+/g,'');_0x514fad[_0x7b0452(0x1da)]=_0x29cdb4[_0x7b0452(0x217)],_0x32b774[_0x7b0452(0x1da)]=_0x16a322[_0x7b0452(0x217)];};function downloadText(){const _0x233a46=_0x40c431;if(confirm(_0x233a46(0x212))){const _0x2812fb=prompt(_0x233a46(0x1e8));if(_0x2812fb){var _0x976f39=document[_0x233a46(0x1db)](_0x233a46(0x1e0))[_0x233a46(0x219)],_0x40fa3a=_0x2812fb+_0x233a46(0x1ea),_0xf29c7a=new Blob([_0x976f39],{'type':_0x233a46(0x1fd)}),_0x42237a=document[_0x233a46(0x200)]('a');_0x42237a['href']=URL[_0x233a46(0x1d8)](_0xf29c7a),_0x42237a['download']=_0x40fa3a,_0x42237a[_0x233a46(0x20a)]();}}};}else{const watermark=document[_0x40c431(0x200)](_0x40c431(0x1f4));watermark[_0x40c431(0x1da)]=_0x40c431(0x1f5),watermark[_0x40c431(0x1f7)]['position']=_0x40c431(0x203),watermark['style']['left']=_0x40c431(0x1e2),watermark[_0x40c431(0x1f7)][_0x40c431(0x1d9)]=_0x40c431(0x207),watermark[_0x40c431(0x1f7)]['right']=_0x40c431(0x207),watermark[_0x40c431(0x1f7)]['color']='$fff',watermark[_0x40c431(0x1f7)][_0x40c431(0x20d)]='3rem',document[_0x40c431(0x1f9)][_0x40c431(0x215)](watermark);const contentElement=document['querySelector']('.content');if(contentElement===null){const bodyElement=document['querySelector']('body');bodyElement[_0x40c431(0x1f7)][_0x40c431(0x1ef)]=_0x40c431(0x1f2);}else contentElement['style'][_0x40c431(0x1ef)]=_0x40c431(0x1f2);}function _0x11d2(){const _0x45fee4=['wordCount','forEach','display','13329484UhZhEo','#ketik','none','change','div','&#98;&#108;&#111;&#103;&#119;&#111;&#114;&#108;&#100;&#115;','.checkboxs','style','9885648qdKNky','body','https://www.myinstants.com/media/sounds/pew_pew-dknight556-1379997159.mp3','blogworlds','target','text/plain;charset=utf-8','4124012ReBynU','hostname','createElement','pause','input','fixed','516649vKTpAM','result','split','50%','querySelectorAll','volume','click','addEventListener','popupContainer','fontSize','1810860IAPHTc','src','play','location','apakah\x20anda\x20ingin\x20mendownload\x20hasil\x20kerja\x20anda?','block','loop','appendChild','trim','length','1912618UZBbal','value','createObjectURL','bottom','innerHTML','getElementById','path/to/die.mp3','querySelector','charCount','sound','TextEditor','onload','30px','.notification','replace','1071775fVjMyM','srcdoc','https://www.myinstants.com/media/sounds/exit-aim.mp3','nama\x20projects:\x20','#run','.txt','.my-textarea','checked'];_0x11d2=function(){return _0x45fee4;};return _0x11d2();}
+
+    </script>
+
+</body>
+</html>
