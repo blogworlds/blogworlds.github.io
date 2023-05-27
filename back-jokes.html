@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>backgroundColor</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff6b6b;
+      }
+      .container {
+        width: 80%;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+      }
+      .container h3 {
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        font-size: 2rem;
+        letter-spacing: 5px;
+      }
+
+      .container button {
+        position: absolute;
+        bottom: 10%;
+        border: none;
+        padding: 0.5rem 5rem;
+        font-size: 2rem;
+        border-radius: 8px;
+      }
+      .kotak {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 8px;
+        border: 2px solid;
+      }
+      .bulat {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: var(--warna);
+      }
+      .notif.active {
+        display: flex;
+      }
+
+      .notif {
+        position: absolute;
+        padding: 4rem 1rem;
+        width: 85%;
+        background-color: azure;
+        z-index: 999;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        transition: 2s;
+      }
+      .notif p {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      .notif span {
+        position: absolute;
+        padding: 0.2rem 0.5rem;
+        bottom: 0;
+        right: 0;
+      }
+      .btn {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #ff6600;
+        border: none;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 2px 2px 8px rgb(63, 53, 109);
+        z-index: 1;
+      }
+
+      .btn:before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: rgba(255, 255, 255, 0.1);
+        transform-origin: top right;
+        transform: translateX(-100%) rotate(45deg);
+        transition: transform 0.3s ease-out;
+        z-index: -1;
+      }
+
+      .btn:hover:before {
+        transform: translateX(0%) rotate(45deg);
+        scale: 10px;
+      }
+
+      .kotak .bulat.active {
+        border: 3px solid black;
+      }
+
+      .salam {
+        display: flex;
+        position: absolute;
+        background-color: azure;
+        padding: 4rem 1rem;
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        z-index: 7;
+      }
+
+      .salam input {
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+      }
+      .salam button {
+        border: none;
+        padding: 0.5rem 3rem;
+        border-radius: 8px;
+        background-color: aquamarine;
+        cursor: pointer;
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+          width: 30%;
+        }
+        .container button {
+          bottom: 5%;
+        }
+        .salam {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="salam">
+      <input type="text" id="nama" placeholder="masukkan namaMu" autofocus />
+      <br />
+      <button type="submit" class="kirim">lanjut</button>
+    </div>
+
+    <div class="notif">
+      <p></p>
+      <span>desain by hamzahxou</span>
+    </div>
+
+    <div class="container">
+      <h3><span id="namaSpan"></span></h3>
+      <div class="kotak">
+        <div
+          class="bulat active"
+          style="--warna: #ff6b6b"
+          onclick="warna('#ff6b6b')"
+        ></div>
+        <div
+          class="bulat"
+          style="--warna: #ff9f43"
+          onclick="warna('#ff9f43')"
+        ></div>
+        <div
+          class="bulat"
+          style="--warna: #00dc82"
+          onclick="warna('#00dc82')"
+        ></div>
+        <div
+          class="bulat"
+          style="--warna: #00ade1"
+          onclick="warna('#00ade1')"
+        ></div>
+      </div>
+      <button id="jokes" class="btn">jokes</button>
+    </div>
+
+    <script>
+      const conta = document.querySelector(".container");
+      conta.style.display = "none";
+      function warna(v) {
+        document.body.style.backgroundColor = v;
+
+        document.querySelectorAll(".bulat").forEach((bulats) => {
+          bulats.classList.remove("active");
+        });
+        event.target.classList.add("active");
+      }
+
+      const jokes = document.getElementById("jokes");
+      const notif = document.querySelector(".notif");
+      const notifP = document.querySelector(".notif p");
+
+      document.querySelector(".container h3").style.display = "none";
+
+      const namaLu = document.getElementById("nama");
+      const btn = document.querySelector(".kirim");
+      const kotak = document.querySelector(".kotak");
+
+      btn.addEventListener("click", () => {
+        if (namaLu.value.trim() !== "") {
+          conta.style.display = "flex";
+          const spanNama = document.getElementById("namaSpan");
+          spanNama.innerHTML = "hallo " + namaLu.value + " 🫡";
+          document.querySelector(".container h3").style.display = "block";
+          document.querySelector(".salam").style.display = "none";
+
+          jokes.onclick = () => {
+            fetch("https://candaan-api.vercel.app/api/text/random")
+              .then((response) => response.json())
+              .then((dataa) => {
+                const joke = dataa.data; // Mendapatkan teks candaan dari respons JSON
+                notifP.innerHTML = joke; // Menampilkan candaan dalam elemen notifP
+                notif.classList.add("active");
+              })
+              .catch((error) => {
+                console.error(error);
+              });
+          };
+
+          document.addEventListener("click", (e) => {
+            if (
+              !jokes.contains(e.target) &&
+              !notif.contains(e.target) &&
+              !kotak.contains(e.target)
+            ) {
+              notif.classList.remove("active");
+            }
+          });
+        } else {
+          conta.style.display = "flex";
+          const spanNama = document.getElementById("namaSpan");
+          spanNama.innerHTML = "isilah 😒";
+          document.querySelector(".container h3").style.display = "block";
+          document.querySelector(".salam").style.display = "none";
+          jokes.onclick = () => {
+            notifP.innerHTML = "isi dulu nama nya 🙄";
+            notif.classList.add("active");
+          };
+          document.addEventListener("click", (e) => {
+            if (
+              !jokes.contains(e.target) &&
+              !notif.contains(e.target) &&
+              !kotak.contains(e.target)
+            ) {
+              notif.classList.remove("active");
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
